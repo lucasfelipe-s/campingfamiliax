@@ -1,0 +1,12 @@
+section{
+    background:no-repeat center/cover url(/campingfamiliax/images/camping.jpg);
+    height: 50vh;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.section-content{
+    max-width: 320px;
+    margin: auto;
+}
