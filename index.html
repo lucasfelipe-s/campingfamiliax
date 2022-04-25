@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS STYLES -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
     <title>Camping Familia X</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1>Camping Base Família X</h1>
+        <header class="header">
+            <h1 class="header-title">Camping Base Família X</h1>
             <nav>
-                <ul>
+                <ul class="top-nav">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="#faca-reserva">Faça sua reserva</a></li>
@@ -22,7 +31,7 @@
             </nav>
         </header>
 
-        <section>
+        <section class="first-section">
             <div class="section-content">
                 <h1>Camping Família X</h1>
                 <p>Se você busca se conectar com a natureza e viver uma experiência ao ar livre inesquecível, é aqui onde você precisa estar!</p>
@@ -31,16 +40,29 @@
         
         <main>
             <div id="sobre">
-                <h2>Sobre</h2>
-                <p>Um camping na montanha criado pela <a href="https://www.youtube.com/channel/UCZws0Sd17W9aqTwubWqhMVA" target="_blank" rel="noopener noreferrer">Família X</a>, Localizado na Serra Catarinense a 1250m de altitude. Nossa base seu refúgio.</p>
+                <div class="main-sobre">
+                    <h2>Sobre</h2>
+                    <p>Um camping na montanha criado pela <a href="https://www.youtube.com/channel/UCZws0Sd17W9aqTwubWqhMVA" target="_blank" rel="noopener noreferrer">Família X</a>, Localizado na Serra Catarinense a 1250m de altitude. Nossa base seu refúgio.</p>
+                </div>
+                
 
-                <h3>Tour pelo camping</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0cBNtgvNKl0" title="Tour pelo camping da família X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <h3>Vídeo de reinauguração do camping</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mUyVot9HyIM" title="Reinauguração camping família X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14123.613545649068!2d-49.4656024!3d-27.7511258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3405e701d44a1ec!2sCamping%20Fam%C3%ADlia%20X!5e0!3m2!1spt-BR!2sbr!4v1650747824104!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="sobre-content">
+                    <div class="tour">
+                         <h3>Tour pelo camping</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0cBNtgvNKl0" title="Tour pelo camping da família X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="apresentacao">
+                        <h3>Vídeo de reinauguração do camping</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mUyVot9HyIM" title="Reinauguração camping família X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14123.613545649068!2d-49.4656024!3d-27.7511258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3405e701d44a1ec!2sCamping%20Fam%C3%ADlia%20X!5e0!3m2!1spt-BR!2sbr!4v1650747824104!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+                
             </div>
 
             <div id="contato">
@@ -56,7 +78,14 @@
         </main>
 
         <footer>
-
+            <section class="footer-conect">
+                <h1>Conect</h1>
+                <p><a href="https://www.facebook.com/campingfamiliax/?ref=page_internal" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+                <p><a href="https://www.instagram.com/campingfamiliax/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+                <p><a href="https://www.youtube.com/channel/UCZws0Sd17W9aqTwubWqhMVA" target="_blank" rel="noopener noreferrer">Youtube</a></p>
+            </section>
+            <p>&copy; 2022 Camping Família X. Todos os direitos reservados.</p> <p><small>Desenvolvido por: <a href="https://github.com/lucasfelipe-s" target="_blank" rel="noopener noreferrer">Lucas</a></small>
+            </p>
         </footer>
     </div>
     
