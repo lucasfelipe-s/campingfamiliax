@@ -6,89 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS STYLES -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">  
 
 
     <title>Camping Familia X</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="header-title">Camping Base Família X</h1>
-            <nav>
-                <ul class="top-nav">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="#faca-reserva">Faça sua reserva</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="first-section">
-            <div class="section-content">
-                <h1>Camping Família X</h1>
-                <p>Se você busca se conectar com a natureza e viver uma experiência ao ar livre inesquecível, é aqui onde você precisa estar!</p>
+    <header class="cabecalho">
+        <figure class="cabecalho__logo">
+            <img class="cabecalho__logo" src="./assets/images/logo-branco.png" alt="Logo camping base família x">
+            <figcaption>Logo camping base família X</figcaption>
+        </figure>
+        <nav class="cabecalho__menu"></nav>
+    </header>
+    <main class="principal">
+        <section class="principal__hero">
+            <h2>BOAS-VINDAS AO CAMPING FAMÍLIA X 👋</h2>
+            <h1>Um camping na montanha para todos</h1>
+            <p>Se você busca se conectar com a natureza e viver uma experiência ao ar livre inesquecível, é aqui onde você precisa estar ✨</p>
+            <button class="hero__btn">
+                <img src="./assets/images/whatsapp.svg" alt="Logo whatsapp">
+                <span>Faça sua reserva</span>
+            </button>
+            <div class="montanhas">
+                <figure class="hero__familia">
+                    <img class="hero__familia" src="./assets/images/familia-x.png" alt="Família X, um homem e uma mulher com seus dois filhos" loading="lazy">
+                    <figcaption>Família X, um homem e uma mulher com seus dois filhos</figcaption>
+                </figure>
+            </div>
+            <div class="hero__infos">
+                <div class="hero__seguidores">
+                    <h3>+38 mil</h3>
+                    <p>Seguidores no instagram</p>
+                </div>
+                <div class="hero__clientes">
+                    <h3>+100</h3>
+                    <p>Clientes satisfeitos</p>
+                </div>
+                <div class="hero__anosVidas">
+                    <h3>+2</h3>
+                    <p>Anos de vida</p>
+                </div>
             </div>
         </section>
         
-        <main>
-            <div id="sobre">
-                <div class="main-sobre">
-                    <h2>Sobre</h2>
-                    <p>Um camping na montanha criado pela <a href="https://www.youtube.com/channel/UCZws0Sd17W9aqTwubWqhMVA" target="_blank" rel="noopener noreferrer">Família X</a>, Localizado na Serra Catarinense a 1250m de altitude. Nossa base seu refúgio.</p>
-                </div>
-                
+        <section id="servicos">
 
-                <div class="sobre-content">
-                    <div class="tour">
-                         <h3>Tour pelo camping</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0cBNtgvNKl0" title="Tour pelo camping da família X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="apresentacao">
-                        <h3>Vídeo de reinauguração do camping</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mUyVot9HyIM" title="Reinauguração camping família X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14123.613545649068!2d-49.4656024!3d-27.7511258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3405e701d44a1ec!2sCamping%20Fam%C3%ADlia%20X!5e0!3m2!1spt-BR!2sbr!4v1650747824104!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    
-                </div>
-                
-            </div>
+        </section>
 
-            <div id="contato">
-                <h2>Contato</h2>
-                <p>Entre em contato atraves do whatsapp pelo número (48) 99819-4418 ou diretamente pelo link <a href="https://api.whatsapp.com/send?phone=5548998194418&text=Olá%2C%20vim%20pelo%20Instagram.%20Quero%20fazer%20minha%20reserva%20no%20camping%20😀" target="_blank" rel="noopener noreferrer">Whatsapp</a>.</p>
-                <p>Para mais algumas informações também temos o <a href="https://www.instagram.com/campingfamiliax/" target="_blank" rel="noopener noreferrer">Instagram</a> e o <a href="https://www.facebook.com/campingfamiliax/?ref=page_internal" target="_blank" rel="noopener noreferrer">Facebook</a> do camping, não esqueça de seguir para sempre ficar ligado nas atualizações.</p>
-            </div>
-           
-            <div id="faca-reserva">
-                <h2>Faça a sua reserva</h2>
-                <p>Não deixe de fazer a sua reserva ainda hoje pelo <a href="https://api.whatsapp.com/send?phone=5548998194418&text=Olá%2C%20vim%20pelo%20Instagram.%20Quero%20fazer%20minha%20reserva%20no%20camping%20😀" target="_blank" rel="noopener noreferrer">Whatsapp</a> número (48) 99819-4418.</p>
-            </div>
-        </main>
-
-        <footer>
-            <section class="footer-conect">
-                <h1>Conect</h1>
-                <p><a href="https://www.facebook.com/campingfamiliax/?ref=page_internal" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-                <p><a href="https://www.instagram.com/campingfamiliax/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-                <p><a href="https://www.youtube.com/channel/UCZws0Sd17W9aqTwubWqhMVA" target="_blank" rel="noopener noreferrer">Youtube</a></p>
-            </section>
-            <p>&copy; 2022 Camping Família X. Todos os direitos reservados.</p> <p><small>Desenvolvido por: <a href="https://github.com/lucasfelipe-s" target="_blank" rel="noopener noreferrer">Lucas</a></small>
-            </p>
-        </footer>
-    </div>
-    
+    </main>
 </body>
 
 </html>

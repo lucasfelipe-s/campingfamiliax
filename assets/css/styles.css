@@ -1,0 +1,132 @@
+:root{
+    font-size: 62.5%;
+
+    --primary-color:#351808;
+    --bg-color:rgba(93, 124, 9, 0.62);
+    --bg-color2:#F7F9F9;
+    --bege:#FFFAF1;
+    --headline-:#212529;
+    --paragraph:#495057;
+    --secondary-white:#EDEDED;
+    --primary-hover:#271206;
+
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+figcaption{
+    display: none;
+}
+
+header{
+    width: 37.5rem;
+    margin: 0 auto;
+}
+.cabecalho__logo{
+    width: 7rem;
+    height: 7rem;
+}
+
+.principal{
+    width: 37.5rem;
+    margin: 0 auto;
+}
+
+.principal__hero{
+    background-color: var(--bg-color);
+}
+
+.principal__hero h2{
+    padding-top: 3.9rem;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.principal__hero h1{
+    padding-top: 1.6rem;
+    font-size:3.4rem;
+    color: var(--headline-);
+    margin: 0 2.4rem;
+}
+
+.principal__hero p {
+    padding-top: 2.4rem;
+    font-size: 1.8rem;
+    color: var(--paragraph);
+    margin: 0 2.4rem;
+}
+
+
+.hero__btn{
+    width: 26.3rem;
+    height: 5.2rem;
+    margin: 3.2rem auto 0;  
+
+    cursor: pointer;
+    border: none;
+    border-radius: 4rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    text-transform: uppercase;
+}
+
+.hero__btn:hover{
+    background-color: var(--primary-hover);
+}
+
+.hero__btn span{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.hero__familia{
+    width: 32.7rem;
+    height: 31.6rem;
+    margin: 0 auto;
+}
+
+.montanhas{
+    margin-top: 9.7rem;
+    width: 100%;
+    background-image: url(../images/montanhas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__infos{
+    width: 32.7rem;
+    height: 47rem;
+
+
+    background-color: var(--bege);
+    border: 1px solid var(--bg-color);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.hero__infos h3{
+    font-size: 4.8rem;
+    color: var(--headline-);
+    line-height: 6.2rem;
+}
+
+.hero__infos p{
+    font-size: 1.6rem;
+    color: var(--paragraph);
+    line-height: 2.4rem;
+}
