@@ -24,7 +24,7 @@
     <title>Camping Familia X</title>
 </head>
 
-<body onscroll="onScroll()">
+<body id="body" onscroll="onScroll()">
     <header id="header" class="cabecalho">
         <div class="wrapper">
             <div class="icons__svg">
@@ -186,14 +186,14 @@
                     </svg>
                 </div>                 
                 <div class="menu__svg">
-                    <button>
+                    <button aria-expanded="false" aria-label="Abrir menu" class="open__menu" onclick="menuOpen()">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 20H30" stroke="#351808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M10 12H30" stroke="#351808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M18 28L30 28" stroke="#351808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                       
                     </button>
-                    <button>
+                    <button aria-expanded="open" aria-label="Fechar menu" class="close__menu" onclick="menuClose()">
                         <img src="./assets/images/menu-close.svg" alt="Fechar menu">                     
                     </button>
                 </div>         
@@ -205,7 +205,7 @@
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Depoimentos</a></li>
                 </ul>
-                <button>Faça sua reserva</button>
+                <a class="button" href="#">Faça sua reserva</a>
                 <ul class="social__links">
                     <li>
                         <a href="https://www.instagram.com/campingfamiliax/" target="_blank" rel="noopener noreferrer">

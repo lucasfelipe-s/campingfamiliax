@@ -1,5 +1,6 @@
 :root{
     font-size: 62.5%;
+    --header-height:7.2rem;
 
     --primary-color:#351808;
     --primary-color-scroll:#351808cb;
@@ -11,17 +12,20 @@
     --secondary-white:#EDEDED;
     --primary-hover:#271206;
 
-    --header-height:7.2rem;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
 }
 
 body{
     font-size: 1.6rem;
     font-family: 'DM Sans', sans-serif;
     text-align: center;
-}
 
-figcaption{
-    display: none;
+    overflow: overlay;
 }
 
 .wrapper{
@@ -62,6 +66,19 @@ header.scroll .logo__svg svg path{
 
 header.scroll .menu__svg svg path{
     stroke:var(--secondary-white);
+}
+
+.cabecalho .menu__svg button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.2rem 0 0;
+}
+
+.cabecalho .menu__svg button img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .principal::before{
@@ -170,4 +187,95 @@ header.scroll .menu__svg svg path{
     font-size: 1.6rem;
     color: var(--primary-color);
     line-height: 150%;
+}
+
+/* ========== MENU EXPANDIDO ================ */
+body.menu__expanded{
+    overflow: hidden;
+}
+
+body.menu__expanded > :not(header){
+    display: none;
+}
+
+.menu__header,
+.close__menu,
+body.menu__expanded .open__menu{
+    display: none;
+}
+
+body.menu__expanded .menu__header,
+body.menu__expanded .close__menu{
+    display: block;
+}
+
+body.menu__expanded .menu__header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body.menu__expanded header{
+    position: relative;
+}
+
+.menu__header ul:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    margin-top: calc(6rem + var(--header-height));
+    margin-bottom: 4.8rem;
+}
+
+
+.menu__header ul:nth-child(1) li a{
+    color: var(--secondary-white);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+}
+
+.menu__header a.button{
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+}
+
+.menu__header .button{
+    box-sizing: border-box;
+    align-items: center;
+    padding: 1.6rem 3.2rem;
+    line-height: 2.3rem;
+    width: 27.4rem;
+    height: 5.5rem;
+    display: inline-block;
+    background: var(--secondary-white);
+    border-radius: 4rem; 
+    margin-bottom: 8rem;
+}
+
+.social__links{
+    justify-content: center;
+    display: flex;
+    gap: 3.2rem;
+}
+
+body.menu__expanded .logo__svg,
+body.menu__expanded .menu__svg{
+    position: relative;
+    z-index: 2;
+}
+
+body.menu__expanded .logo__svg svg path{
+    fill:var(--secondary-white);
+}
+
+body.menu__expanded .menu__svg svg path{
+    stroke:var(--secondary-white);
 }

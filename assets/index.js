@@ -5,3 +5,11 @@ function onScroll(){
         header.classList.remove("scroll")
     }
 }
+
+function menuOpen(){
+    body.classList.add("menu__expanded")
+}
+
+function menuClose(){
+    body.classList.remove("menu__expanded")
+}

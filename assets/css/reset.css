@@ -82,3 +82,11 @@ hr {
 input, select {
  vertical-align:middle;
 }
+
+body a{
+    text-decoration: none;
+}
+
+figcaption{
+    display: none;
+}
