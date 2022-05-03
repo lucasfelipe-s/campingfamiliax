@@ -87,7 +87,7 @@ header.scroll .menu__svg svg path{
 .principal::before{
     content: "";
     width: 100%;
-    height: 81.25rem;
+    height: 81.4rem;
     background-color: var(--bg-color);
     display: block;
 
@@ -112,7 +112,7 @@ header.scroll .menu__svg svg path{
 }
 
 .principal__hero h1{
-    padding-top: 1.6rem;
+    padding-top: 1.8rem;
     font-size:3.4rem;
     line-height: 130%;
     color: var(--headline-);
@@ -302,7 +302,7 @@ body.menu__expanded .menu__svg svg path{
 
 #servicos h2{
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 150%;
     
     letter-spacing: 0.08em;
@@ -365,4 +365,67 @@ body.menu__expanded .menu__svg svg path{
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+/* ================================ SEÇÃO SOBRE ================================ */
+
+#sobre{
+    margin-top: 3.2rem;
+    background-color: var(--bg-color);
+}
+
+#sobre h2{
+
+    padding-top: 6.8rem;
+
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 150%;
+    
+    letter-spacing: 0.08em;
+    
+    color: var(--primary-color);
+}
+
+#sobre span{
+    display: block;
+    font-weight: 700;
+    font-size: 3rem;
+
+    color: var(--headline-);
+    margin: 1.6rem 2.4rem 2.4rem;
+}
+
+#sobre p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    color: var(--primary-color);
+
+    margin-bottom: 6rem;
+}
+
+.carousel__list{
+    display: flex;
+    overflow-x: auto;
+    list-style: none;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.carousel__items{
+    scroll-snap-align: center;
+}
+
+.carousel__items img{
+    box-sizing: border-box;
+    width: 30rem;
+    height: 30rem;
+
+    border-radius: 0.7rem;
+
+    margin-inline:1.2rem;
 }
