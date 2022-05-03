@@ -33,13 +33,14 @@ body{
     margin-inline:auto;
 }
 
+/* ================================ CABEÇALHO ================================ */
+
 header{
     position: fixed;
     top:0;
     left: 50%;
     transform: translateX(-50%);
     height: var(--header-height);
-    border-bottom: 1px solid var(--primary-color-scroll);
 }
 
 header .icons__svg{
@@ -81,10 +82,12 @@ header.scroll .menu__svg svg path{
     justify-content: center;
 }
 
+/* ================================ SEÇÃO HERO ================================ */
+
 .principal::before{
     content: "";
     width: 100%;
-    height: 98rem;
+    height: 81.25rem;
     background-color: var(--bg-color);
     display: block;
 
@@ -94,15 +97,24 @@ header.scroll .menu__svg svg path{
     position: absolute;
 }
 
-.principal__hero h2{
+.principal__hero {
+    /* width: 100%;
+    background-color: var(--bg-color); */
     padding-top: calc(3.9rem + var(--header-height));
+}
+
+.principal__hero .hero__welcome{
+    display: inline-block;
     font-size: 1.4rem;
+    line-height: 150%;
+    font-weight: 700;
     color: var(--primary-color);
 }
 
 .principal__hero h1{
     padding-top: 1.6rem;
     font-size:3.4rem;
+    line-height: 130%;
     color: var(--headline-);
     margin: 0 2.4rem;
 }
@@ -112,6 +124,7 @@ header.scroll .menu__svg svg path{
     font-size: 1.8rem;
     color: var(--paragraph);
     margin: 0 2.4rem;
+    line-height: 150%;
 }
 
 
@@ -156,7 +169,7 @@ header.scroll .menu__svg svg path{
     background-repeat: no-repeat;
 }
 
-.hero__infos{
+/* .hero__infos{
     width: 32.7rem;
     padding-block:4rem;
     margin-inline:auto;
@@ -187,7 +200,7 @@ header.scroll .menu__svg svg path{
     font-size: 1.6rem;
     color: var(--primary-color);
     line-height: 150%;
-}
+} */
 
 /* ========== MENU EXPANDIDO ================ */
 body.menu__expanded{
@@ -278,4 +291,78 @@ body.menu__expanded .logo__svg svg path{
 
 body.menu__expanded .menu__svg svg path{
     stroke:var(--secondary-white);
+}
+
+/* ================================ SEÇÃO HERO ================================ */
+
+#servicos{
+    padding-top: 10.1rem;
+    background-color: var(--bg-color2);
+}
+
+#servicos h2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 150%;
+    
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+    margin-bottom: 1.6rem;
+
+}
+
+#servicos p:nth-child(2){
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--headline-);
+
+    margin-bottom: 6rem;
+    padding-inline: 3rem;
+}
+
+.servicos__infos{
+    display: flex;
+    flex-direction: column;
+    gap:3.2rem;
+    padding-inline: 2.4rem;
+}
+
+.servicos__infos div{ 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.6rem; 
+
+    text-align: left;
+    padding: 2.4rem;
+
+    border: 1px solid var(--bg-color);
+    border-radius: 0.6rem;
+    background: white;
+}
+
+.servicos__infos div img{  
+    height: 2.4rem;
+    width: 2.4rem; 
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.servicos__infos div h3{   
+    font-weight: 700;
+    font-size: 2.4rem;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.servicos__infos div p{   
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
