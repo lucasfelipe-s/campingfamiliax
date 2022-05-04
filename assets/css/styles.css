@@ -50,6 +50,7 @@ section{
     top:0;
     height: var(--header-height);
     width: 100vw;
+    z-index: 100;
 }
 
 #header .icons__svg{
@@ -67,6 +68,7 @@ section{
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     -moz-backdrop-filter: blur(3px);
+    z-index: 100;
 }
 
 #header.scroll .logo__svg svg path{
@@ -94,10 +96,16 @@ section{
 body.menu__expanded{
     overflow: hidden;
     background-color: var(--primary-color);
+    z-index: 101;
+}
+
+body.menu__expanded .wrapper{
+    background-color: var(--primary-color);
+    z-index: 101;
 }
 
 body.menu__expanded > :not(#header){
-    visibility: hidden;
+    visibility: hidden !important;
 }
 
 .menu__header,
@@ -306,6 +314,10 @@ body.menu__expanded .menu__svg svg path{
     display: none;
 }
 
+body.menu__expanded .slide{
+    transition: 0s;
+}
+
 .slide{
     transition: 2s;
 }
@@ -431,6 +443,7 @@ body.menu__expanded .menu__svg svg path{
 
 #sobre{
     background-color: var(--bg-color);
+    padding-bottom: 12.4rem;
 }
 
 #sobre h2{
@@ -492,7 +505,7 @@ body.menu__expanded .menu__svg svg path{
     width: 32.7rem;
     padding-block:2.4rem;
     margin-inline:auto;
-    margin-top: 2.4rem;
+    margin-top: -9rem;
 
     background-color: var(--primary-color);
     border-radius: 0.6rem;

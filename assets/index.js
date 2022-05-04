@@ -1,3 +1,5 @@
+//SCROLL
+
 function onScroll(){
     if(scrollY > 0){
         document.getElementById("header").classList.add("scroll")
@@ -6,6 +8,7 @@ function onScroll(){
     }
 }
 
+//MENU EXPANDIDO
 function menuOpen(){
     body.classList.add("menu__expanded")
 }
@@ -13,6 +16,12 @@ function menuOpen(){
 function menuClose(){
     body.classList.remove("menu__expanded")
 }
+
+//CAROUSEL SERVIÇOS
+
+document.getElementById("servicos__menu").addEventListener("click",function radio1(){
+    count=0;
+})
 
 document.getElementById("radio1").addEventListener("click",function radio1(){
     count=1;
@@ -59,6 +68,17 @@ function nextImage(){
     }
 
     document.getElementById("radio"+count).checked = true;
-
-
 }
+
+//Scroll reveal
+ScrollReveal({
+    origin:"top",
+    distance:"30px",
+    duration:700
+}).reveal(`#header,
+.principal__hero,
+#servicos header,
+#servicos .servicos__infos,
+#sobre header,
+#sobre .carousel,
+.banner`);
