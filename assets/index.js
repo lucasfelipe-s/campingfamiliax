@@ -81,4 +81,6 @@ ScrollReveal({
 #servicos .servicos__infos,
 #sobre header,
 #sobre .carousel,
-.banner`);
+.banner,
+#depoimentos header,
+.depoimentos__cards .card`);
