@@ -469,6 +469,8 @@ body.menu__expanded .slide{
     color: var(--primary-color);
 
     margin-bottom: 5rem;
+
+    padding-inline: 2.4rem;
 }
 
 .carousel__list{
@@ -491,6 +493,7 @@ body.menu__expanded .slide{
     box-sizing: border-box;
     width: 30rem;
     height: 30rem;
+    cursor: pointer;
 
     border-radius: 0.7rem;
 
@@ -507,6 +510,35 @@ body.menu__expanded .slide{
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.2);
     transform: translate3d(-8px, -8px, 13px);
 }
+
+.sobre__videos div h3 a{
+    color: var(--headline-);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sobre__videos div h3 a:hover{
+    text-decoration: underline;
+}
+
+iframe{
+    margin-inline: 2.4rem;
+    border-radius: 0.6rem;
+}
+
+.video__tour .iframe{
+    margin-block: 1rem;
+}
+
+.video__reinauguracao .iframe{
+    margin-top: 1rem;
+}
+
+.video__tour{
+    margin-block: 3.4rem;
+}
+
 
 
 /* ================================ BANNER ================================ */
@@ -564,6 +596,7 @@ section#depoimentos{
     color: var(--primary-color);
 
     margin-bottom: 6rem;
+    padding-inline: 2.4rem;
 }
 
 .depoimentos__cards{
@@ -583,19 +616,19 @@ section#depoimentos{
     padding: 3.2rem;
 
     background-color: white;
-    border: 1px solid var(--primary-color-scroll);
+    border: 1px solid var(--paragraph);
     border-radius: 0.4rem;
 }
 
 .depoimentos__cards .card img{
-    width: 4.2rem;
+    width: 4.5rem;
 }
 
 .card blockquote{
     font-size: 1.6rem;
     line-height: 150%;
 
-    color: var(--primary-color);
+    color: var(--paragraph);
 }
 
 .usuario{
@@ -615,7 +648,6 @@ section#depoimentos{
     line-height: 175%;
 
     margin-left: 1.6rem;
-
 }
 
 

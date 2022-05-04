@@ -81,6 +81,8 @@ ScrollReveal({
 #servicos .servicos__infos,
 #sobre header,
 #sobre .carousel,
+#sobre .video__tour,
+#sobre .video__reinauguracao,
 .banner,
 #depoimentos header,
 .depoimentos__cards .card`);
