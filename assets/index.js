@@ -85,4 +85,8 @@ ScrollReveal({
 #sobre .video__reinauguracao,
 .banner,
 #depoimentos header,
-.depoimentos__cards .card`);
+.depoimentos__cards .card,
+#contato header,
+#contato .contato__content ul,
+#contato .contato__content .button,
+#contato .contato__content .contato__embed`);
