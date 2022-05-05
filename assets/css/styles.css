@@ -408,7 +408,7 @@ body.menu__expanded .slide{
 .navigation__auto{
     position: absolute;
     width: 32.7rem;
-    margin-top: 26.2rem;
+    margin-top: 27rem;
     display: flex;
     justify-content: center;
 }
@@ -478,16 +478,21 @@ body.menu__expanded .slide{
 }
 
 
-#sobre p{
+#sobre .sobre__infos{
+    text-align: left;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
 
     color: var(--primary-color);
 
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 
     padding-inline: 2.4rem;
+}
+
+.sobre__infos p{
+    margin-bottom: 1rem;
 }
 
 .carousel__list{
@@ -765,12 +770,17 @@ footer .logo__svg img{
     width:11rem;
 }
 
-footer span{
+footer span,
+footer span a{
     color: var(--secondary-white);
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
 
+}
+
+footer span a:hover{
+    text-decoration: underline;
 }
 
 footer .social__links{

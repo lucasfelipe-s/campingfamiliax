@@ -35,7 +35,6 @@ function menuClose(){
 
 //CAROUSEL SERVIÇOS
 
-
 document.getElementById("servicos__menu").addEventListener("click",function radio1(){
     count=1
     document.getElementById("radio1").checked = true;
@@ -69,19 +68,18 @@ document.getElementById("radio6").addEventListener("click",function radio6(){
     count=6;
 })
 
-
 let count = 1;
 document.getElementById("radio1").checked = true;
 
 var myTimer = setInterval(function(){
     nextImage();
-}, 6000)
+}, 15000)
 
 function verificaClick(){
     clearInterval(myTimer);
     myTimer = setInterval(function(){
         nextImage();
-    }, 6000);
+    }, 15000);
 }
 
 function nextImage(){
@@ -96,7 +94,6 @@ function nextImage(){
     }
 document.getElementById("radio"+count).checked = true;
 }
-
 
 //Scroll reveal
 ScrollReveal({
