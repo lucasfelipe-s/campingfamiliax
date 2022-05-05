@@ -103,7 +103,7 @@ section header span{
     padding: 0.1rem 2.4rem;
 }
 
-#header.scroll{
+body.scroll #header{
     background-color: var(--primary-color-scroll);
     border: none;
 
@@ -113,11 +113,11 @@ section header span{
     z-index: 100;
 }
 
-#header.scroll .logo__svg svg path{
+body.scroll #header .logo__svg svg path{
     fill:var(--secondary-white);
 }
 
-#header.scroll .menu__svg svg path{
+body.scroll #header .menu__svg svg path{
     stroke:var(--secondary-white);
 }
 
@@ -147,7 +147,9 @@ body.menu__expanded .wrapper{
 }
 
 body.menu__expanded > :not(#header){
-    visibility: hidden !important;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
 }
 
 .menu__header,
@@ -204,6 +206,17 @@ body.menu__expanded .menu__header{
     background: var(--secondary-white);
     border-radius: 4rem; 
     margin-bottom: 8rem;
+}
+
+.menu__header .button:hover,
+.banner a.banner__btn:hover{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-white);
+}
+
+.menu__header a.button:hover,
+.banner a.banner__btn:hover{
+    color: var(--secondary-white);
 }
 
 .social__links{
@@ -515,18 +528,13 @@ body.menu__expanded .slide{
     transform: translate3d(-8px, -8px, 13px);
 }
 
-.sobre__videos div h3 a{
+.sobre__videos div h3{
     color: var(--headline-);
     font-size: 1.6rem;
     text-transform: uppercase;
-    cursor: pointer;
 
     display: inline-block;
     margin-bottom: 1rem;
-}
-
-.sobre__videos div h3 a:hover{
-    text-decoration: underline;
 }
 
 .videos__embed{
@@ -770,3 +778,23 @@ footer .social__links{
     display: flex;
     justify-content: flex-start;
 }
+
+/* ================================ BACK TO TOP ================================ */
+#backToTopButton{
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(100%);
+    transition: 0.2s;
+}
+
+#backToTopButton.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+

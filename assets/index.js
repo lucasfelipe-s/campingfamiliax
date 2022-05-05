@@ -1,10 +1,26 @@
 //SCROLL
 
+window.addEventListener("scroll", onScroll)
+
+onScroll()
 function onScroll(){
+    showNavOnScroll();
+    showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll(){
     if(scrollY > 0){
-        document.getElementById("header").classList.add("scroll")
+        document.body.classList.add("scroll")
     }else{
-        document.getElementById("header").classList.remove("scroll")
+        document.body.classList.remove("scroll")
+    }
+}
+
+function showBackToTopButtonOnScroll(){
+    if(scrollY > 250){
+        document.getElementById("backToTopButton").classList.add("show")
+    }else{
+        document.getElementById("backToTopButton").classList.remove("show")
     }
 }
 
@@ -89,4 +105,8 @@ ScrollReveal({
 #contato header,
 #contato .contato__content ul,
 #contato .contato__content .button,
-#contato .contato__content .contato__embed`);
+#contato .contato__content .contato__embed,
+footer .logo__svg,
+footer span,
+footer ul,
+footer span small`);
