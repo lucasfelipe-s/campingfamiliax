@@ -35,8 +35,14 @@ function menuClose(){
 
 //CAROUSEL SERVIÇOS
 
+
 document.getElementById("servicos__menu").addEventListener("click",function radio1(){
-    count=0;
+    count=1
+    document.getElementById("radio1").checked = true;
+    clearInterval(myTimer);
+    myTimer = setInterval(function(){
+        nextImage();
+    }, 6000);
 })
 
 document.getElementById("radio1").addEventListener("click",function radio1(){
@@ -63,6 +69,7 @@ document.getElementById("radio6").addEventListener("click",function radio6(){
     count=6;
 })
 
+
 let count = 1;
 document.getElementById("radio1").checked = true;
 
@@ -78,13 +85,18 @@ function verificaClick(){
 }
 
 function nextImage(){
+    if((scrollY > 600) && (scrollY <1350)){
     count++;
     if(count > 6){
         count = 1;
+    }  
+}else if((scrollY < 250) || (scrollY >1350)){
+        count=1
+        document.getElementById("radio1").checked = true;
     }
-
-    document.getElementById("radio"+count).checked = true;
+document.getElementById("radio"+count).checked = true;
 }
+
 
 //Scroll reveal
 ScrollReveal({
