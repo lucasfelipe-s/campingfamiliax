@@ -52,13 +52,13 @@ document.getElementById("radio1").checked = true;
 
 var myTimer = setInterval(function(){
     nextImage();
-}, 4000)
+}, 6000)
 
 function verificaClick(){
     clearInterval(myTimer);
     myTimer = setInterval(function(){
         nextImage();
-    }, 4000);
+    }, 6000);
 }
 
 function nextImage(){

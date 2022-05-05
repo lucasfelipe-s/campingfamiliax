@@ -92,6 +92,7 @@ section header span{
     height: var(--header-height);
     width: 100vw;
     z-index: 100;
+
 }
 
 #header .icons__svg{
@@ -675,14 +676,19 @@ section#depoimentos{
 }
 
 #contato header h2{
-    font-weight: 700;
     font-size: 3rem;
-    line-height: 3.9rem;
 
     text-transform: none;
     color: var(--headline-);
 
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
+}
+
+#contato header p{
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
 }
 
 #contato .contato__content ul{
@@ -690,10 +696,11 @@ section#depoimentos{
     flex-direction: column;
     gap: 1.6rem;
 
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
-#contato .contato__content ul li{
+#contato .contato__content ul li,
+#contato .contato__content ul li a{
     display: flex;
     align-items: center;
     gap: .8rem;
@@ -706,7 +713,9 @@ section#depoimentos{
 }
 
 #contato .button{
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 #contato .contato__embed{
@@ -727,4 +736,37 @@ section#depoimentos{
         transform: translateX(-3px);
 }
 
+/* ================================ FOOTER ================================ */
 
+footer{
+    padding-block:6rem;
+    background-color: var(--primary-color);
+
+    text-align: left;
+}
+
+footer .wrapper{
+    padding-inline: 2.4rem
+}
+
+footer .logo__svg{
+    margin-bottom: 2.4rem;
+}
+
+footer .logo__svg img{
+    width:11rem;
+}
+
+footer span{
+    color: var(--secondary-white);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2;
+
+}
+
+footer .social__links{
+    margin-block: 3.2rem;
+    display: flex;
+    justify-content: flex-start;
+}
