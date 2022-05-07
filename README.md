@@ -18,8 +18,30 @@
   </a>
 </p>
 
+<h2 align="center">
+  Imagens do projeto desktop
+</h2>
 <p align="center">
-  <img src="" width="100%" />
+  <img src="./assets/.github/home.png" width="100%" />
+  <img src="./assets/.github/servicos.png" width="100%" />
+  <img src="./assets/.github/sobre.png" width="100%" />
+  <img src="./assets/.github/sobre-banner.png" width="100%" />
+  <img src="./assets/.github/depoimentos.png" width="100%" />
+  <img src="./assets/.github/contato.png" width="100%" />
+  <img src="./assets/.github/footer.png" width="100%" />
+</p>
+<h2 align="center">
+  Imagens do projeto mobile
+</h2>
+<p align="center">
+  <img src="./assets/.github/home-mobile.png" width="100%" />
+  <img src="./assets/.github/menu-mobile.png" width="100%" />
+  <img src="./assets/.github/servicos-mobile.png" width="100%" />
+  <img src="./assets/.github/sobre-mobile.png" width="100%" />
+  <img src="./assets/.github/sobre-banner-mobile.png" width="100%" />
+  <img src="./assets/.github/depoimentos-mobile.png" width="100%" />
+  <img src="./assets/.github/contato-mobile.png" width="100%" />
+  <img src="./assets/.github/footer-mobile.png" width="100%" />
 </p>
 
 ## 💻 Projeto
@@ -41,7 +63,12 @@ Durante a criação desse projeto aprendi muitos macetes de HTML e CSS, também 
 Meu maior desafio durante a criação desse projeto foi conseguir desenvolver minhas ideias e colocar elas em pratica de uma forma organizada com o conhecimento que eu tinha. Entretanto, consegui adquirir muito conhecimento nesse processo para aplicações futuras.
 
 ## 👨‍💻 Informações pessoais
-
+<h2 align="center">
+  Contribuições no dia do projeto.
+</h2>
+<p align="center">
+  <img src="./assets/.github/contribuicoes.png" width="100%" />
+</p>
 <details>
     <summary><small>Redes do criador</small></summary>
     <section>
