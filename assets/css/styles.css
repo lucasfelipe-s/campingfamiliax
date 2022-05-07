@@ -1218,8 +1218,8 @@ footer .social__links img:hover{
 
 }
 
-/* ================================ RESPONSIVO 1920PX ================================ */
-@media (min-width:1920px){
+/* ================================ RESPONSIVO 1800PX ================================ */
+@media (min-width:1800px){
     .wrapper{
         width: min(192rem,100%);
     }
@@ -1238,7 +1238,7 @@ footer .social__links img:hover{
         height: 13rem;
     }
 
-    /* HEADER 1920px*/
+    /* HEADER 1800px*/
     #header{
         height: 10rem;
         display: flex;
@@ -1259,7 +1259,7 @@ footer .social__links img:hover{
         font-size: 2.5rem;
     }
 
-    /* SEÇÃO HERO 1920px*/
+    /* SEÇÃO HERO 1800px*/
 
     .principal__hero{
         padding-top: 20rem;
@@ -1297,7 +1297,7 @@ footer .social__links img:hover{
         height: 60rem;
     }
 
-    /* SEÇÃO SERVIÇOS 1920px*/
+    /* SEÇÃO SERVIÇOS 1800px*/
 
     #servicos p:nth-child(2){
         font-size: 3.2rem;
@@ -1318,7 +1318,7 @@ footer .social__links img:hover{
 
     }
 
-    /* SEÇÃO SOBRE 1920px*/
+    /* SEÇÃO SOBRE 1800px*/
     .sobre__infos p{
         font-size: 2.3rem;
     }
@@ -1345,7 +1345,7 @@ footer .social__links img:hover{
         font-size: 6rem !important;
     }
 
-    /* BANNER 1920px*/
+    /* BANNER 1800px*/
     .banner{
         margin-top: -12rem;
         width: min(179rem,100%);
@@ -1360,7 +1360,7 @@ footer .social__links img:hover{
         padding: 3.5rem 16rem;
     }
 
-    /* SEÇÃO DEPOIMENTOS 1920px*/
+    /* SEÇÃO DEPOIMENTOS 1800px*/
     #depoimentos header{
         margin-inline: 6.1rem;
     }
@@ -1399,7 +1399,7 @@ footer .social__links img:hover{
         font-size: 2.8rem;
     }
 
-    /* SEÇÃO CONTATO 1920px*/
+    /* SEÇÃO CONTATO 1800px*/
     #contato .col-a{
         width: min(56.4rem,100%);
     }
@@ -1414,7 +1414,7 @@ footer .social__links img:hover{
         width: 3rem;
     }
 
-    /* FOOTER 1920px*/
+    /* FOOTER 1800px*/
     footer .social__links img{
         width: 3rem;
     }
@@ -1423,7 +1423,7 @@ footer .social__links img:hover{
         font-size: 1.8rem;
     }
 
-    /* BACKTOTOPBUTTON 1920px*/
+    /* BACKTOTOPBUTTON 1800px*/
     #backToTopButton img{
         width: 7rem;
     }
