@@ -35,7 +35,7 @@ body{
 }
 
 .wrapper{
-    width: 37.5rem;
+    width: min(77rem,100%);
     margin-inline:auto;
 }
 
@@ -71,7 +71,7 @@ section header span{
     border: none;
     border-radius: 4rem;
     background-color: var(--primary-color);
-    color: var(--secondary-white);
+    color: var(--bg-color2);
 
     display: flex;
     align-items: center;
@@ -114,11 +114,11 @@ body.scroll #header{
 }
 
 body.scroll #header .logo__svg svg path{
-    fill:var(--secondary-white);
+    fill:var(--bg-color2);
 }
 
 body.scroll #header .menu__svg svg path{
-    stroke:var(--secondary-white);
+    stroke:var(--bg-color2);
 }
 
 .cabecalho .menu__svg button{
@@ -180,7 +180,7 @@ body.menu__expanded .menu__header{
 
 
 .menu__header ul:nth-child(1) li a{
-    color: var(--secondary-white);
+    color: var(--bg-color2);
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 3.1rem;
@@ -200,10 +200,8 @@ body.menu__expanded .menu__header{
     align-items: center;
     padding: 1.6rem 3.2rem;
     line-height: 2.3rem;
-    width: 27.4rem;
-    height: 5.5rem;
     display: inline-block;
-    background: var(--secondary-white);
+    background: var(--bg-color2);
     border-radius: 4rem; 
     margin-bottom: 8rem;
 }
@@ -211,12 +209,12 @@ body.menu__expanded .menu__header{
 .menu__header .button:hover,
 .banner a.banner__btn:hover{
     background-color: var(--primary-color);
-    border: 1px solid var(--secondary-white);
+    border: 1px solid var(--bg-color2);
 }
 
 .menu__header a.button:hover,
 .banner a.banner__btn:hover{
-    color: var(--secondary-white);
+    color: var(--bg-color2);
 }
 
 .social__links{
@@ -232,11 +230,11 @@ body.menu__expanded .menu__svg{
 }
 
 body.menu__expanded .logo__svg svg path{
-    fill:var(--secondary-white);
+    fill:var(--bg-color2);
 }
 
 body.menu__expanded .menu__svg svg path{
-    stroke:var(--secondary-white);
+    stroke:var(--bg-color2);
 }
 
 /* ================================ SEÇÃO HERO ================================ */
@@ -265,6 +263,7 @@ body.menu__expanded .menu__svg svg path{
     line-height: 150%;
     font-weight: 700;
     color: var(--primary-color);
+    margin: 0 2.4rem;
 }
 
 .principal__hero h1{
@@ -278,7 +277,7 @@ body.menu__expanded .menu__svg svg path{
 .principal__hero p {
     padding-top: 2.4rem;
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--bg-color2);
     margin: 0 2.4rem;
     line-height: 150%;
 }
@@ -408,7 +407,7 @@ body.menu__expanded .slide{
 .navigation__auto{
     position: absolute;
     width: 32.7rem;
-    margin-top: 27rem;
+    margin-top: 35rem;
     display: flex;
     justify-content: center;
 }
@@ -468,6 +467,7 @@ body.menu__expanded .slide{
     order: 2;
     flex-grow: 0;
     color: var(--primary-color);
+    line-height: 2.4rem;
 }
 
 /* ================================ SEÇÃO SOBRE ================================ */
@@ -505,10 +505,15 @@ body.menu__expanded .slide{
     scroll-behavior: smooth;
 
     padding-top: 1rem;
+    margin-left: 1.2rem;
 }
 
 .carousel__items{
     scroll-snap-align: center;
+}
+
+li.carousel__items:nth-child(11){
+    margin-right: 1.2rem;
 }
 
 .carousel__items img{
@@ -539,22 +544,21 @@ body.menu__expanded .slide{
     text-transform: uppercase;
 
     display: inline-block;
-    margin-bottom: 1rem;
 }
 
 .videos__embed{
     position: relative;
-    width: 32.7rem;
+    width: min(77rem,100%);
     padding-bottom: 48%;
 }
 
 .videos__embed iframe{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 2.4rem);
     border: none;
-    margin-inline: 2.4rem;
-    border-radius: 0.6rem;
+    padding: 2.4rem;
+    border-radius: 3rem;
     display: block;
 }
 
@@ -570,12 +574,15 @@ body.menu__expanded .slide{
 
 /* ================================ BANNER ================================ */
 
- .banner{
-    width: 32.7rem;
-    padding-block:2.4rem;
+.banner{
+    width: min(77rem,100%);
     margin-inline:auto;
     margin-top: -8rem;
+}
 
+.banner__content{
+    padding-block:2.4rem;
+    margin-inline: 2.4rem;
     background-color: var(--primary-color);
     border-radius: 0.6rem;
     box-sizing: border-box;
@@ -586,28 +593,26 @@ body.menu__expanded .slide{
     gap: 2rem;
 }
 
-.banner h3{
+.banner__content h3{
     font-size: 1.6rem;
-    color: var(--secondary-white);
+    color: var(--bg-color2);
     line-height: 130%;
     margin-bottom: 0.4rem;
     padding-inline: 2.4rem;
 }
 
-.banner .banner__btn{
+.banner__content .banner__btn{
     box-sizing: border-box;
     align-items: center;
     padding: 1.6rem 3.2rem;
     line-height: 2.3rem;
-    width: 26.3rem;
-    height: 5.2rem;
-    
+
     margin-inline: auto;
 
     cursor: pointer;
     border: none;
     display: inline-block;
-    background: var(--secondary-white);
+    background: var(--bg-color2);
     border-radius: 4rem; 
 }
 
@@ -622,14 +627,20 @@ section#depoimentos{
     line-height: 150%;
     color: var(--primary-color);
 
-    margin-bottom: 6rem;
-    padding-inline: 2.4rem;
+    margin-bottom: 2.8rem;
+    /* padding-inline: 2.4rem; */
+}
+
+#depoimentos header span{
+    margin-left: 0;
 }
 
 .depoimentos__cards{
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+
+    align-items: center;
 
     padding-inline: 2.4rem;
 }
@@ -640,7 +651,11 @@ section#depoimentos{
     text-align: left;
     gap: 2rem;
 
+    width: min(54rem,100%);
+    height: min(27rem,100%);
+
     padding: 3.2rem;
+    margin-inline: auto;
 
     background-color: white;
     border: 1px solid var(--paragraph);
@@ -704,7 +719,7 @@ section#depoimentos{
     margin-bottom: 2rem;
 }
 
-#contato .contato__content ul{
+#contato ul{
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -712,8 +727,8 @@ section#depoimentos{
     margin-bottom: 3rem;
 }
 
-#contato .contato__content ul li,
-#contato .contato__content ul li a{
+#contato ul li,
+#contato ul li a{
     display: flex;
     align-items: center;
     gap: .8rem;
@@ -772,7 +787,7 @@ footer .logo__svg img{
 
 footer span,
 footer span a{
-    color: var(--secondary-white);
+    color: var(--bg-color2);
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
@@ -807,4 +822,586 @@ footer .social__links{
     visibility: visible;
     transform: translateY(0);
 }
+
+/* ================================ RESPONSIVO ================================ */
+
+@media (min-width:1024px) {
+    /* GERAL RESPONSIVO*/
+
+    body{
+        overflow: auto;
+    }
+
+    .wrapper{
+        width: min(112rem,100%);
+    }
+
+    .videos__embed{
+        width: min(90rem,100%);
+        padding-bottom: 55%;
+        margin-inline: auto;
+    }
+
+    section,
+    #sobre{
+        padding-block: 16rem;
+    }
+
+    footer{
+        padding-block: 8rem;  
+    }
+
+    
+    /* RESET RESPONSIVO*/
+    header#header .wrapper * {
+        margin: 0;
+        padding:0;
+        opacity: initial;
+        display: initial;
+        display: initial;
+        flex-direction: initial;
+        visibility: initial;
+        position: initial;
+        font-size: initial;
+        color: initial;
+        background-color: initial;
+        font-weight: initial;
+    }
+
+    
+    
+    /* HEADER RESPONSIVO*/
+    
+    header#header .close__menu,
+    header#header .open__menu,
+    header#header .social__links{
+        display: none;
+    }
+
+    header#header .wrapper{
+        padding-inline: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header#header .wrapper .menu__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 66%;
+    }
+    
+    header#header .menu__header ul:nth-child(1){
+        display: flex;
+        gap: 3.2rem;
+    }
+    
+    header#header .menu__header ul li a{
+        color: var(--primary-color);
+        opacity: 0.7;
+        transition: opacity .4s;
+    }
+
+    header#header .menu__header a.button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2.4rem;
+
+        border: 1px solid var(--primary-color);
+        border-radius: 4rem;
+        
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    header#header .menu__header a.button:hover{
+    border: none;
+        font-weight: bold;
+        color: var(--bg-color2);
+        background-color: var(--primary-color);
+    }
+    
+    body.scroll header#header .menu__header ul li a{
+        color: var(--bg-color2);
+    }
+    
+    body.scroll header#header .menu__header a.button{
+        border-color: var(--bg-color2);
+        color: var(--bg-color2);
+    }
+    
+    body.scroll header#header .menu__header a.button:hover{
+        border: none;
+        font-weight: bold;
+        color: var(--primary-color);
+        background-color: var(--bg-color2);
+    }
+    
+    header#header .menu__header ul li a:hover{
+        opacity: 1;
+        font-weight: 700;
+    }
+    
+    header#header .menu__header ul li a::after{
+        content: "";
+        width: 0%;
+        height: .2rem;
+        background-color: var(--primary-color);
+        
+        position: relative;
+        bottom: -1.94rem;
+        left: -0.8rem;
+        
+        display: block;
+        
+        transition: width 0.2s;
+    }
+    
+    body.scroll header#header .menu__header ul li a::after{
+        background-color: var(--bg-color2);
+    }
+    
+    header#header .menu__header ul li a:hover::after{
+        padding-inline: 0.8rem;
+        width: 100%;
+    }
+
+    body.scroll header#header .menu__header ul li a:hover::after{
+        background-color: var(--bg-color2);
+    }
+    
+    /* PRICIPAL__HERO RESPONSIVO*/
+    .principal__hero .wrapper{
+        display: grid;
+        grid-template-columns: 47.5rem 1fr;
+        
+        background-image: url(../images/montanhas.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .principal__hero .wrapper .montanhas{
+        background-image: none;
+    }
+    
+    .principal__hero .col-a{
+        text-align: left;
+        margin-bottom: 16.1rem;
+    }
+
+    .principal__hero h1{
+        font-size: 5.2rem;
+    }
+    
+    .principal__hero .hero__familia{
+        margin-top: 2rem;
+        width: 52.4rem;
+        height: 48.4rem;
+    }
+    
+    .principal__hero .button{
+        margin-inline: 2.4rem;
+    }
+    
+    /* SERVIÇOS RESPONSIVO*/
+    #servicos .wrapper .slider .slides input,
+    #servicos .wrapper .slider .slides .navigation__auto,
+    #servicos .wrapper .slider div.manual__navigation{
+        display: none;
+    }
+    
+    #servicos .wrapper .slider .slides{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        transition: none;
+        gap: 4rem;
+    }
+    
+    #servicos .wrapper .slider .slide{
+        margin: 0;
+        width: 30%;
+        flex-grow: 1;
+        transition: none;
+    }
+    
+    #radio1:checked ~ .first,
+    #radio2:checked ~ .first,
+    #radio3:checked ~ .first,
+    #radio4:checked ~ .first,
+    #radio5:checked ~ .first,
+    #radio6:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    /* SOBRE RESPONSIVO*/
+
+    .sobre__videos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video__reinauguracao{
+        margin-block: 3.4rem;
+    }
+
+    /* BANNER RESPONSIVO*/
+
+    .banner{
+        margin-top: -10rem;
+        width: min(112rem,100%);
+        margin-inline: auto;
+    }
+
+    .banner__content{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6rem;
+    }
+
+    .banner__content h3{
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    .banner__content .banner__btn{
+        padding: 1.5rem 10rem;
+        margin: 0;
+    }
+
+    /* DEPOIMENTOS RESPONSIVO*/
+
+    #depoimentos header{
+        text-align: left;
+    }
+
+    #depoimentos  .depoimentos__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'X A'
+        'B C';
+    }
+
+    #depoimentos  .depoimentos__cards .card{
+        height: 27.5rem;
+        justify-content: space-between;
+    }
+
+    #depoimentos .col-x{
+        grid-area: X;
+    }
+    .depoimentos__cards .col-a{
+        grid-area: A;
+    }
+    .depoimentos__cards .col-b{
+        grid-area: B;
+    }
+    .depoimentos__cards .col-c{
+        grid-area: C;
+    }
+
+    /* CONTATO RESPONSIVO */
+
+    #contato a.button{
+        margin: 0;
+        width: 100%;
+    }
+
+    #contato .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'A B';
+    }
+    #contato .col-a{
+        grid-area: A;
+        width: min(40.4rem,100%);
+    }
+
+    #contato .col-b{
+        grid-area: B;
+        width: min(68rem,100%);
+    }
+    
+    #contato .contato__embed{
+        height: 100%;
+    }
+
+    /* FOOTER RESPONSIVO */
+
+    footer .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1440px){
+    .wrapper{
+        width: min(144rem,100%);
+    }
+
+    /* SEÇÃO HERO */
+
+    .principal__hero .col-a{
+        width: min(60.5rem,100%);
+    }
+
+    .principal__hero .montanhas{
+        overflow-y: hidden;
+    }
+    .principal__hero .hero__familia{
+        margin-top: 1.3rem;
+        margin-right: 6.9rem;
+        width: 61.4rem;
+        height: 50rem;
+    }
+
+    /* SEÇÃO SOBRE */
+    .carousel__items img{
+        width: 40rem;
+        height: 40rem;
+    }
+
+    /* BANNER */
+
+    .banner{
+        margin-top: -12rem;
+    }
+
+    .banner__content{
+        padding: 8rem;
+    }
+
+    /* SEÇÃO DEPOIMENTOS */
+
+    .depoimentos__cards .card{
+        width: min(69rem,100%);
+    }
+
+    /* BACKTOTOPBUTTON */
+
+    #backToTopButton img{
+        width: 5.5rem;
+    }
+
+}
+
+@media (min-width:1920px){
+    .wrapper{
+        width: min(192rem,100%);
+    }
+
+    section header h2{
+        font-size: 2rem;
+    }
+
+    section header span{
+        font-size: 3.2rem;
+    }
+
+    .logo__svg svg,
+    footer .logo__svg img{
+        width: 13rem;
+        height: 13rem;
+    }
+
+    /* HEADER */
+    #header{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    #header .menu__header ul li a{
+        font-size: 2.5rem;
+    }
+
+    header#header .menu__header ul li a::after{
+        bottom: -3.3rem;
+    }
+
+    header#header .menu__header a.button{
+        padding: 2rem 7rem;
+        font-size: 2.5rem;
+    }
+
+    /* SEÇÃO HERO */
+
+    .principal__hero{
+        padding-top: 20rem;
+    }
+
+    .principal__hero .wrapper{
+        grid-template-columns: 81.5rem 1fr  
+    }
+
+    .principal__hero .hero__welcome{
+        font-size: 2rem;
+    }
+
+    .principal__hero h1{
+        font-size: 5.2rem;
+    }
+
+    .principal__hero p{
+        font-size: 2.5rem;
+    }
+
+    .principal__hero .button{
+        padding: 2rem 6rem;
+    }
+
+    .principal__hero .hero__familia{
+        margin-inline: auto;
+        width: 80rem;
+        height: 60rem;
+
+    }
+
+    .principal__hero .hero__familia img{
+        padding-top: -3rem;
+        width: 80rem;
+        height: 60rem;
+    }
+
+    /* SEÇÃO SERVIÇOS */
+
+    #servicos p:nth-child(2){
+        font-size: 3.2rem;
+    }
+
+    .servicos__infos .infos img{
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .servicos__infos .infos h3{
+        font-size: 2.8rem;
+    }
+
+    .servicos__infos .infos p{
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+
+    }
+
+
+    /* SEÇÃO SOBRE */
+
+    .sobre__infos p{
+        font-size: 2.3rem;
+    }
+
+    .carousel__items img{
+        width: 50rem;
+        height: 50rem;
+    }
+
+    .sobre__videos div h3{
+        font-size: 2rem;
+    }
+
+    .videos__embed{
+        width: min(97rem,100%);
+    }
+
+    /* BANNER */
+
+    .banner{
+        margin-top: -12rem;
+        width: min(179rem,100%);
+    }
+
+    .banner__content{
+        padding: 8rem;
+    }
+
+    .banner__content .banner__btn{
+        padding: 3.5rem 16rem;
+    }
+
+    /* SEÇÃO DEPOIMENTOS */
+
+    #depoimentos header{
+        margin-inline: 6.1rem;
+    }
+
+    #depoimentos header h2,
+    #contato header h2{
+        font-size: 2rem;
+    }
+
+    #depoimentos header span,
+    #contato header h2{
+        font-size: 3.2rem;
+    }
+
+    #depoimentos header p,
+    #contato header p,
+    #contato ul li,
+    #contato ul li a{
+        font-size: 2.3rem;
+    }
+
+    #depoimentos .depoimentos__cards .card{
+        width: min(80rem,100%);
+        height: 30.5rem;
+    }
+
+    .card cite{
+        font-size: 2.3rem;
+    }
+
+    .card .usuario img{
+        width: 7rem;
+    }
+
+    .card .usuario p{
+        font-size: 2.8rem;
+    }
+
+    /* SEÇÃO CONTATO */
+
+    #contato .col-a{
+        width: min(56.4rem,100%);
+    }
+
+    #contato .button{
+        font-size: 2.3rem;
+        padding-block: 3rem;
+        gap: 5rem;
+    }
+
+    #contato .button img{
+        width: 3rem;
+    }
+
+    /* FOOTER */
+
+    footer .social__links img{
+        width: 3rem;
+    }
+
+    footer span{
+        font-size: 1.8rem;
+    }
+
+    /* BACKTOTOPBUTTON */
+
+    #backToTopButton img{
+        width: 7rem;
+    }
+}
+
 
