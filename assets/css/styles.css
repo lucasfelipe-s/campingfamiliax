@@ -2,6 +2,8 @@
     font-size: 62.5%;
     --header-height:7.2rem;
 
+    --swiper-theme-color: hsla(76, 86%, 26%, 0.62);
+
     --primary-color:#351808;
     --primary-color-scroll:#351808a9;
     --bg-color:hsla(76, 86%, 26%, 0.62);
@@ -483,7 +485,7 @@ body.menu__expanded .slide{
     margin-bottom: 1rem;
 }
 
-.carousel__list{
+/* .carousel__list{
     display: flex;
     overflow-x: auto;
     list-style: none;
@@ -500,8 +502,20 @@ body.menu__expanded .slide{
     scroll-snap-align: center;
 }
 
-li.carousel__items:nth-child(11){
+div.carousel__items:nth-child(11){
     margin-right: 1.2rem;
+} */
+
+.swiper-pagination-bullet-active{
+    background: var(--bg-color2) !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 4rem !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--bg-color2) !important;
 }
 
 .carousel__items img{
@@ -1044,6 +1058,20 @@ footer .social__links img:hover{
         margin-block: 3.4rem;
     }
 
+    .swiper-button-next, .swiper-button-prev{
+        opacity: .7;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-button-next:hover, .swiper-button-prev:hover{
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet{
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+
     /* BANNER RESPONSIVO 1024px*/
 
     .banner{
@@ -1306,6 +1334,15 @@ footer .social__links img:hover{
 
     .videos__embed{
         width: min(97rem,100%);
+    }
+
+    .swiper-pagination-bullet{
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 6rem !important;
     }
 
     /* BANNER 1920px*/

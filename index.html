@@ -8,6 +8,10 @@
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +24,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest"> 
       
-
     <title>Camping Familia X</title>
 </head>
 
@@ -337,54 +340,61 @@
                     </div>
                 </header>
     
-                <div class="carousel">
+                <div class="swiper mySwiper carousel">
     
-                    <ul class="carousel__list">
+                    <div class="swiper-wrapper carousel__list">
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/mulher-na-montanha-com-um-bebê.jpg" alt="Mulher na montanha com um bebê" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/uma-cozinha-rústica.jpg" alt="Uma cozinha rústica" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/lenhas-em-uma-fogueira-com-um-banheiro-rústico-de-fundo.jpg" alt="Lenhas em uma fogueira com um banheiro rústico de fundo" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/fogueira-acesa-em-cima de-uma-montanha.jpg" alt="Fogueira acesa em cima de uma montanha" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/um-homem-e-uma-mulher-junto-com-um-grupo-de-crianças-com-presentes-de-páscoa.jpg" alt="Um homem e uma mulher junto com um grupo de crianças com presentes de páscoa" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/um-homem-com-um-microfone-e-uma-mulher-com-seu-filho-no-colo.jpg" alt="Um homem com um microfone e uma mulher com seu filho no colo" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/um-grupo-de-crianças-fazendo-brincadeiras-de-páscoa.jpg" alt="Um grupo de crianças fazendo brincadeiras de páscoa" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/um-galpão-com-uma-placa-escrito-cozinha.jpg" alt="Um galpão com uma placa escrito cozinha" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/uma-paisagem-na-montanha.jpg" alt="Uma paisagem na montanha" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/um-casal-acampado-em-cima-de-uma-montanha.jpg" alt="Um casal acampado em cima de uma montanha" loading="lazy">
-                        </li>
+                        </div>
     
-                        <li class="carousel__items">
+                        <div class="swiper-slide carousel__items">
                             <img src="./assets/images/um-grupo-grande-de-pessoas-com-uma-bandeira-do-Camping-da-Família-X.jpg" alt="Um grupo grande de pessoas com uma bandeira do Camping da Família X" loading="lazy">
-                        </li>
-                    </ul>
+                        </div>
+
+                        <div class="swiper-slide carousel__items">
+                            <img src="./assets/images/vista-de-cima-de-um-camping.jpg" alt="Vista de cima de um camping" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
                 <div class="sobre__videos">
@@ -473,7 +483,6 @@
                         Também estamos no direct do instagram! Dúvidas? Nos chame por lá!</p>
                     </header>
 
-                    
                     <div class="contato__content">
                         <ul>
                             <li>
@@ -543,6 +552,63 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const scrennWidth = window.screen.availWidth
+
+        if(scrennWidth >= 1024){
+                let swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                });
+            } else if((scrennWidth>= 768) && (scrennWidth < 1024)){
+            let swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                /* spaceBetween: 20, */
+                slidesPerGroup: 2,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                });
+            }else if(scrennWidth < 768){
+            let swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                });
+            }
+    </script>
 </body>
 
 </html>
