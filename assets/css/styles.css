@@ -841,7 +841,7 @@ footer .social__links img:hover{
     }
 
     .wrapper{
-        width: min(112rem,100%);
+        width: min(98rem,100%);
     }
 
     .videos__embed{
@@ -1077,7 +1077,7 @@ footer .social__links img:hover{
 
     .banner{
         margin-top: -10rem;
-        width: min(112rem,100%);
+        width: min(98rem,100%);
         margin-inline: auto;
     }
 
@@ -1174,7 +1174,7 @@ footer .social__links img:hover{
 /* ================================ RESPONSIVO 1440PX ================================ */
 @media (min-width:1440px){
     .wrapper{
-        width: min(144rem,100%);
+        width: min(140rem,100%);
     }
 
     /* SEÇÃO HERO 1440px*/
@@ -1220,9 +1220,9 @@ footer .social__links img:hover{
 }
 
 /* ================================ RESPONSIVO 1800PX ================================ */
-@media (min-width:1800px){
+@media (min-width:1920px){
     .wrapper{
-        width: min(192rem,100%);
+        width: min(188rem,100%);
     }
 
     section header h2{
