@@ -85,7 +85,6 @@ section header span{
 }
 
 /* ================================ CABEÇALHO ================================ */
-
 #header{
     position: fixed;
     top:0;
@@ -178,7 +177,6 @@ body.menu__expanded .menu__header{
     margin-bottom: 4.8rem;
 }
 
-
 .menu__header ul:nth-child(1) li a{
     color: var(--bg-color2);
     font-weight: 700;
@@ -238,7 +236,6 @@ body.menu__expanded .menu__svg svg path{
 }
 
 /* ================================ SEÇÃO HERO ================================ */
-
 .principal::before{
     content: "";
     width: 100%;
@@ -306,9 +303,7 @@ body.menu__expanded .menu__svg svg path{
     background-repeat: no-repeat;
 }
 
-
 /* ================================ SEÇÃO SERVIÇOS ================================ */
-
 #servicos{
     background-color: var(--bg-color2);
 }
@@ -332,7 +327,6 @@ body.menu__expanded .menu__svg svg path{
     padding-inline: 2.4rem;
     overflow-x: hidden;
 }
-
 
 .slides{
     display: flex;
@@ -467,12 +461,10 @@ body.menu__expanded .slide{
 }
 
 /* ================================ SEÇÃO SOBRE ================================ */
-
 #sobre{
     background-color: var(--bg-color);
     padding-bottom: 12.4rem;
 }
-
 
 #sobre .sobre__infos{
     text-align: left;
@@ -566,10 +558,7 @@ li.carousel__items:nth-child(11){
     margin-block: 3.4rem;
 }
 
-
-
 /* ================================ BANNER ================================ */
-
 .banner{
     width: min(77rem,100%);
     margin-inline:auto;
@@ -613,7 +602,6 @@ li.carousel__items:nth-child(11){
 }
 
 /* ================================ DEPOIMENTOS ================================ */
-
 section#depoimentos{
     padding-top: 9rem;
 }
@@ -689,7 +677,6 @@ section#depoimentos{
 }
 
 /* ================================ CONTATO ================================ */
-
 #contato{
     text-align: left;
     background-color: var(--bg-color);
@@ -736,6 +723,10 @@ section#depoimentos{
     color: var(--headline-);
 }
 
+.contato__content ul li a:hover{
+ text-decoration: underline;
+}
+
 #contato .button{
     margin-bottom: 3rem;
     font-weight: 700;
@@ -761,7 +752,6 @@ section#depoimentos{
 }
 
 /* ================================ FOOTER ================================ */
-
 footer{
     padding-block:6rem;
     background-color: var(--primary-color);
@@ -800,6 +790,14 @@ footer .social__links{
     justify-content: flex-start;
 }
 
+footer .social__links img:hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+
+    transition: transform 0.5s;
+}
+
 /* ================================ BACK TO TOP ================================ */
 #backToTopButton{
     position: fixed;
@@ -820,7 +818,6 @@ footer .social__links{
 }
 
 /* ================================ RESPONSIVO 1024px ================================ */
-
 @media (min-width:1024px) {
     /* GERAL RESPONSIVO 1024px*/
 
@@ -846,7 +843,6 @@ footer .social__links{
     footer{
         padding-block: 8rem;  
     }
-
     
     /* RESET RESPONSIVO 1024px*/
     header#header .wrapper * {
@@ -863,11 +859,8 @@ footer .social__links{
         background-color: initial;
         font-weight: initial;
     }
-
-    
-    
-    /* HEADER RESPONSIVO 1024px*/
-    
+  
+    /* HEADER RESPONSIVO 1024px*/  
     header#header .close__menu,
     header#header .open__menu,
     header#header .social__links{
@@ -1078,7 +1071,6 @@ footer .social__links{
     }
 
     /* DEPOIMENTOS RESPONSIVO 1024px*/
-
     #depoimentos header{
         text-align: left;
     }
@@ -1110,7 +1102,6 @@ footer .social__links{
     }
 
     /* CONTATO RESPONSIVO 1024px*/
-
     #contato a.button{
         margin: 0;
         width: 100%;
@@ -1136,24 +1127,28 @@ footer .social__links{
     }
 
     /* FOOTER RESPONSIVO 1024px*/
-
     footer .wrapper{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
+    /* BACK TO TOP BUTTON 1024PX */
+    #backToTopButton.show:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    }
 }
 
 /* ================================ RESPONSIVO 1440PX ================================ */
-
 @media (min-width:1440px){
     .wrapper{
         width: min(144rem,100%);
     }
 
     /* SEÇÃO HERO 1440px*/
-
     .principal__hero .col-a{
         width: min(60.5rem,100%);
     }
@@ -1175,7 +1170,6 @@ footer .social__links{
     }
 
     /* BANNER 1440px*/
-
     .banner{
         margin-top: -12rem;
     }
@@ -1185,13 +1179,11 @@ footer .social__links{
     }
 
     /* SEÇÃO DEPOIMENTOS 1440px*/
-
     .depoimentos__cards .card{
         width: min(69rem,100%);
     }
 
     /* BACKTOTOPBUTTON 1440px*/
-
     #backToTopButton img{
         width: 5.5rem;
     }
@@ -1199,7 +1191,6 @@ footer .social__links{
 }
 
 /* ================================ RESPONSIVO 1920PX ================================ */
-
 @media (min-width:1920px){
     .wrapper{
         width: min(192rem,100%);
@@ -1299,9 +1290,7 @@ footer .social__links{
 
     }
 
-
     /* SEÇÃO SOBRE 1920px*/
-
     .sobre__infos p{
         font-size: 2.3rem;
     }
@@ -1320,7 +1309,6 @@ footer .social__links{
     }
 
     /* BANNER 1920px*/
-
     .banner{
         margin-top: -12rem;
         width: min(179rem,100%);
@@ -1336,7 +1324,6 @@ footer .social__links{
     }
 
     /* SEÇÃO DEPOIMENTOS 1920px*/
-
     #depoimentos header{
         margin-inline: 6.1rem;
     }
@@ -1376,7 +1363,6 @@ footer .social__links{
     }
 
     /* SEÇÃO CONTATO 1920px*/
-
     #contato .col-a{
         width: min(56.4rem,100%);
     }
@@ -1392,7 +1378,6 @@ footer .social__links{
     }
 
     /* FOOTER 1920px*/
-
     footer .social__links img{
         width: 3rem;
     }
@@ -1402,10 +1387,7 @@ footer .social__links{
     }
 
     /* BACKTOTOPBUTTON 1920px*/
-
     #backToTopButton img{
         width: 7rem;
     }
 }
-
-
