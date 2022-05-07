@@ -21,7 +21,7 @@
 
 <b><p align="center">
   Link para acessar o projeto <a href="https://camping-familia-x.netlify.app" target="_blank">Camping Família X</a>
-</p><b>
+</p></b>
 <h2 align="center">
   Imagens do projeto desktop
 </h2>
