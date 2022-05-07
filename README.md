@@ -2,6 +2,7 @@
   Camping Família X
 </h1>
 
+
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucasfelipe-s/campingfamiliax.svg" />
 
@@ -18,49 +19,61 @@
   </a>
 </p>
 
+<b><p align="center">
+  Link para acessar o projeto <a href="https://camping-familia-x.netlify.app" target="_blank">Camping Família X</a>
+</p><b>
 <h2 align="center">
   Imagens do projeto desktop
 </h2>
-  <img src=".github/home.png" width="100%" />
-  <img src=".github/servicos.png" width="100%" />
-  <img src=".github/sobre.png" width="100%" />
-  <img src=".github/sobre-banner.png" width="100%" />
-  <img src=".github/depoimentos.png" width="100%" />
-  <img src=".github/contato.png" width="100%" />
-  <img src=".github/footer.png" width="100%" />
-
+  <p align="center">
+  <img src=".github/home.png" width="75%" />
+  
+  <p align="center">
+  <img src=".github/servicos.png" width="75%" />
+  </p>
+  <p align="center">
+  <img src=".github/sobre.png" width="75%" />
+  </p>
+  <p align="center">
+  <img src=".github/sobre-banner.png" width="75%" />
+  </p>
+  <p align="center">
+  <img src=".github/depoimentos.png" width="75%" />
+  </p>
+  <p align="center">
+  <img src=".github/contato.png" width="75%" />
+  </p>
+  <p align="center">
+  <img src=".github/footer.png" width="75%" />
+  </p>
 <h2 align="center">
   Imagens do projeto mobile
 </h2>
   <p align="center">
   <img src=".github/home-mobile.jpeg" width="30%" />
-  </p>
-  <p align="center">
   <img src=".github/menu-mobile.jpeg" width="30%" />
+  
   </p>
+
   <p align="center">
   <img src=".github/servicos-mobile.jpeg" width="30%" />
-  </p>
-  <p align="center">
   <img src=".github/sobre-mobile.jpeg" width="30%" />
   </p>
+  
   <p align="center">
   <img src=".github/sobre-banner-mobile.jpeg" width="30%" />
-  </p>
-  <p align="center">
-  <img src=".github/depoimentos-mobile.jpeg" width="30%" />
+  <img src=".github/depoimentos-mobile.jpeg" width="30%" /
   </p>
   <p align="center">
   <img src=".github/contato-mobile.jpeg" width="30%" />
-  </p>
-  <p align="center">
   <img src=".github/footer-mobile.jpeg" width="30%" />
   </p>
 
 ## 💻 Projeto
 
-Antes era apenas um projeto para teste mas agora é um projeto realizado durante o **Evento NLW Return** para a família X.
-Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação).
+Antes era apenas um projeto para teste mas agora é um projeto voluntario realizado durante o **Evento NLW Return** para a família X.<br>
+Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação do projeto).<br>
+O fato de ter diversas funcionalidades "inúteis" ou sem um "padrão", é justamente porque utilizei esse projeto para treinar e buscar antes de tudo evoluir minha lógica e capacidade de botar minhas ideias em prática.<br>
 O protótipo desse website foi desenvolvido pelo [**Jonas Milan**](https://www.instagram.com/jonasmilancc/), [clique aqui](https://www.figma.com/community/file/1102912263666619803) para abrir o protótipo no figma.
 
 Ferramentas usadas nesse projeto:
@@ -80,7 +93,7 @@ Meu maior desafio durante a criação desse projeto foi conseguir desenvolver mi
   Contribuições no dia do projeto.
 </h2>
 <p align="center">
-  <img src="./assets/.github/contribuicoes.png" width="100%" />
+  <img src=".github/contribuicoes.png" width="100%" />
 </p>
 <details>
     <summary><small>Redes do criador</small></summary>
