@@ -21,28 +21,41 @@
 <h2 align="center">
   Imagens do projeto desktop
 </h2>
-<p align="center">
-  <img src="./assets/.github/home.png" width="100%" />
-  <img src="./assets/.github/servicos.png" width="100%" />
-  <img src="./assets/.github/sobre.png" width="100%" />
-  <img src="./assets/.github/sobre-banner.png" width="100%" />
-  <img src="./assets/.github/depoimentos.png" width="100%" />
-  <img src="./assets/.github/contato.png" width="100%" />
-  <img src="./assets/.github/footer.png" width="100%" />
-</p>
+  <img src=".github/home.png" width="100%" />
+  <img src=".github/servicos.png" width="100%" />
+  <img src=".github/sobre.png" width="100%" />
+  <img src=".github/sobre-banner.png" width="100%" />
+  <img src=".github/depoimentos.png" width="100%" />
+  <img src=".github/contato.png" width="100%" />
+  <img src=".github/footer.png" width="100%" />
+
 <h2 align="center">
   Imagens do projeto mobile
 </h2>
-<p align="center">
-  <img src="./assets/.github/home-mobile.png" width="100%" />
-  <img src="./assets/.github/menu-mobile.png" width="100%" />
-  <img src="./assets/.github/servicos-mobile.png" width="100%" />
-  <img src="./assets/.github/sobre-mobile.png" width="100%" />
-  <img src="./assets/.github/sobre-banner-mobile.png" width="100%" />
-  <img src="./assets/.github/depoimentos-mobile.png" width="100%" />
-  <img src="./assets/.github/contato-mobile.png" width="100%" />
-  <img src="./assets/.github/footer-mobile.png" width="100%" />
-</p>
+  <p align="center">
+  <img src=".github/home-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/menu-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/servicos-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/sobre-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/sobre-banner-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/depoimentos-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/contato-mobile.jpeg" width="30%" />
+  </p>
+  <p align="center">
+  <img src=".github/footer-mobile.jpeg" width="30%" />
+  </p>
 
 ## 💻 Projeto
 
