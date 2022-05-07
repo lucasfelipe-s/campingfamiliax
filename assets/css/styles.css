@@ -826,6 +826,7 @@ footer .social__links img:hover{
 }
 
 #backToTopButton.show{
+    z-index: 100;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
