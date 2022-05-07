@@ -369,10 +369,6 @@ body.menu__expanded .slide{
     margin-right: 1rem;
 }
 
-.manual__btn:hover{
-    background-color: var(--bg-color);
-}
-
 #radio1:checked ~ .first{
     margin-left: -0.4%;
 }
@@ -823,10 +819,10 @@ footer .social__links{
     transform: translateY(0);
 }
 
-/* ================================ RESPONSIVO ================================ */
+/* ================================ RESPONSIVO 1024px ================================ */
 
 @media (min-width:1024px) {
-    /* GERAL RESPONSIVO*/
+    /* GERAL RESPONSIVO 1024px*/
 
     body{
         overflow: auto;
@@ -852,7 +848,7 @@ footer .social__links{
     }
 
     
-    /* RESET RESPONSIVO*/
+    /* RESET RESPONSIVO 1024px*/
     header#header .wrapper * {
         margin: 0;
         padding:0;
@@ -870,7 +866,7 @@ footer .social__links{
 
     
     
-    /* HEADER RESPONSIVO*/
+    /* HEADER RESPONSIVO 1024px*/
     
     header#header .close__menu,
     header#header .open__menu,
@@ -935,14 +931,17 @@ footer .social__links{
         color: var(--bg-color2);
     }
     
-    body.scroll header#header .menu__header a.button:hover{
+    body.scroll header#header .menu__header a.button:hover,
+    body.scroll header#header .menu__header a.button.active{
         border: none;
         font-weight: bold;
         color: var(--primary-color);
         background-color: var(--bg-color2);
+        transition: 0.6s;
     }
     
-    header#header .menu__header ul li a:hover{
+    header#header .menu__header ul li a:hover,
+    header#header .menu__header ul li a.active{
         opacity: 1;
         font-weight: 700;
     }
@@ -966,7 +965,8 @@ footer .social__links{
         background-color: var(--bg-color2);
     }
     
-    header#header .menu__header ul li a:hover::after{
+    header#header .menu__header ul li a:hover::after,
+    header#header .menu__header ul li a.active::after{
         padding-inline: 0.8rem;
         width: 100%;
     }
@@ -975,7 +975,7 @@ footer .social__links{
         background-color: var(--bg-color2);
     }
     
-    /* PRICIPAL__HERO RESPONSIVO*/
+    /* PRICIPAL__HERO RESPONSIVO 1024px*/
     .principal__hero .wrapper{
         display: grid;
         grid-template-columns: 47.5rem 1fr;
@@ -1009,7 +1009,7 @@ footer .social__links{
         margin-inline: 2.4rem;
     }
     
-    /* SERVIÇOS RESPONSIVO*/
+    /* SERVIÇOS RESPONSIVO 1024px*/
     #servicos .wrapper .slider .slides input,
     #servicos .wrapper .slider .slides .navigation__auto,
     #servicos .wrapper .slider div.manual__navigation{
@@ -1039,8 +1039,8 @@ footer .social__links{
     #radio6:checked ~ .first{
         margin-left: 0;
     }
-    
-    /* SOBRE RESPONSIVO*/
+
+    /* SOBRE RESPONSIVO 1024px*/
 
     .sobre__videos{
         display: grid;
@@ -1051,7 +1051,7 @@ footer .social__links{
         margin-block: 3.4rem;
     }
 
-    /* BANNER RESPONSIVO*/
+    /* BANNER RESPONSIVO 1024px*/
 
     .banner{
         margin-top: -10rem;
@@ -1077,7 +1077,7 @@ footer .social__links{
         margin: 0;
     }
 
-    /* DEPOIMENTOS RESPONSIVO*/
+    /* DEPOIMENTOS RESPONSIVO 1024px*/
 
     #depoimentos header{
         text-align: left;
@@ -1109,7 +1109,7 @@ footer .social__links{
         grid-area: C;
     }
 
-    /* CONTATO RESPONSIVO */
+    /* CONTATO RESPONSIVO 1024px*/
 
     #contato a.button{
         margin: 0;
@@ -1135,7 +1135,7 @@ footer .social__links{
         height: 100%;
     }
 
-    /* FOOTER RESPONSIVO */
+    /* FOOTER RESPONSIVO 1024px*/
 
     footer .wrapper{
         display: flex;
@@ -1145,12 +1145,14 @@ footer .social__links{
     }
 }
 
+/* ================================ RESPONSIVO 1440PX ================================ */
+
 @media (min-width:1440px){
     .wrapper{
         width: min(144rem,100%);
     }
 
-    /* SEÇÃO HERO */
+    /* SEÇÃO HERO 1440px*/
 
     .principal__hero .col-a{
         width: min(60.5rem,100%);
@@ -1166,13 +1168,13 @@ footer .social__links{
         height: 50rem;
     }
 
-    /* SEÇÃO SOBRE */
+    /* SEÇÃO SOBRE 1440px*/
     .carousel__items img{
         width: 40rem;
         height: 40rem;
     }
 
-    /* BANNER */
+    /* BANNER 1440px*/
 
     .banner{
         margin-top: -12rem;
@@ -1182,19 +1184,21 @@ footer .social__links{
         padding: 8rem;
     }
 
-    /* SEÇÃO DEPOIMENTOS */
+    /* SEÇÃO DEPOIMENTOS 1440px*/
 
     .depoimentos__cards .card{
         width: min(69rem,100%);
     }
 
-    /* BACKTOTOPBUTTON */
+    /* BACKTOTOPBUTTON 1440px*/
 
     #backToTopButton img{
         width: 5.5rem;
     }
 
 }
+
+/* ================================ RESPONSIVO 1920PX ================================ */
 
 @media (min-width:1920px){
     .wrapper{
@@ -1215,7 +1219,7 @@ footer .social__links{
         height: 13rem;
     }
 
-    /* HEADER */
+    /* HEADER 1920px*/
     #header{
         height: 10rem;
         display: flex;
@@ -1236,7 +1240,7 @@ footer .social__links{
         font-size: 2.5rem;
     }
 
-    /* SEÇÃO HERO */
+    /* SEÇÃO HERO 1920px*/
 
     .principal__hero{
         padding-top: 20rem;
@@ -1264,18 +1268,17 @@ footer .social__links{
 
     .principal__hero .hero__familia{
         margin-inline: auto;
-        width: 80rem;
+        width: 75rem;
         height: 60rem;
 
     }
 
     .principal__hero .hero__familia img{
-        padding-top: -3rem;
-        width: 80rem;
+        width: 75rem;
         height: 60rem;
     }
 
-    /* SEÇÃO SERVIÇOS */
+    /* SEÇÃO SERVIÇOS 1920px*/
 
     #servicos p:nth-child(2){
         font-size: 3.2rem;
@@ -1297,7 +1300,7 @@ footer .social__links{
     }
 
 
-    /* SEÇÃO SOBRE */
+    /* SEÇÃO SOBRE 1920px*/
 
     .sobre__infos p{
         font-size: 2.3rem;
@@ -1316,7 +1319,7 @@ footer .social__links{
         width: min(97rem,100%);
     }
 
-    /* BANNER */
+    /* BANNER 1920px*/
 
     .banner{
         margin-top: -12rem;
@@ -1325,13 +1328,14 @@ footer .social__links{
 
     .banner__content{
         padding: 8rem;
+        border-radius: 1rem;
     }
 
     .banner__content .banner__btn{
         padding: 3.5rem 16rem;
     }
 
-    /* SEÇÃO DEPOIMENTOS */
+    /* SEÇÃO DEPOIMENTOS 1920px*/
 
     #depoimentos header{
         margin-inline: 6.1rem;
@@ -1371,7 +1375,7 @@ footer .social__links{
         font-size: 2.8rem;
     }
 
-    /* SEÇÃO CONTATO */
+    /* SEÇÃO CONTATO 1920px*/
 
     #contato .col-a{
         width: min(56.4rem,100%);
@@ -1387,7 +1391,7 @@ footer .social__links{
         width: 3rem;
     }
 
-    /* FOOTER */
+    /* FOOTER 1920px*/
 
     footer .social__links img{
         width: 3rem;
@@ -1397,7 +1401,7 @@ footer .social__links{
         font-size: 1.8rem;
     }
 
-    /* BACKTOTOPBUTTON */
+    /* BACKTOTOPBUTTON 1920px*/
 
     #backToTopButton img{
         width: 7rem;
