@@ -150,13 +150,13 @@ body.menu__expanded > :not(#header){
     opacity: 0;
 }
 
-.menu__header,
-body.menu__expanded .open__menu{
+.menu__header{
     visibility: hidden;
     opacity: 0;
 }
 
-.close__menu{
+.close__menu,
+body.menu__expanded .open__menu{
     display: none;
 }
 
@@ -447,8 +447,6 @@ body.menu__expanded .slide{
     border: 1px solid var(--bg-color);
     border-radius: 0.6rem;
     background: white;
-
-    /* transition: 2s; */
 }
 
 .servicos__infos .infos img{  
@@ -509,27 +507,6 @@ body.menu__expanded .slide{
 .sobre__infos p{
     margin-bottom: 1rem;
 }
-
-/* .carousel__list{
-    display: flex;
-    overflow-x: auto;
-    list-style: none;
-
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-
-    padding-top: 1rem;
-    margin-left: 1.2rem;
-}
-
-.carousel__items{
-    scroll-snap-align: center;
-}
-
-div.carousel__items:nth-child(11){
-    margin-right: 1.2rem;
-} */
 
 .swiper-pagination-bullet-active{
     background: var(--bg-color2) !important;
