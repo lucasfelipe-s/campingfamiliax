@@ -207,7 +207,6 @@
                         </svg>
                     </a>
                 </div>                 
-                <div class="menu__svg">
                     <button aria-expanded="false" aria-label="Abrir menu" class="open__menu" onclick="menuOpen()">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 20H30" stroke="#351808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -217,10 +216,9 @@
                     </button>
                     <button aria-expanded="open" aria-label="Fechar menu" class="close__menu" onclick="menuClose()">
                         <img src="./assets/images/menu-close.svg" alt="Fechar menu">                     
-                    </button>
-                </div>         
+                    </button>       
             </div>
-            <nav class="menu__header">
+            <div class="menu__header">
                 <ul>
                     <li><a onclick="menuClose()" href="#home">Início</a></li>
                     <li><a onclick="menuClose()" href="#servicos" id="servicos__menu" >Serviços</a></li>
@@ -245,7 +243,7 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     <main class="principal">
@@ -353,6 +351,7 @@
                     <span>Entenda quem somos e por que existimos</span>
                     <div class="sobre__infos">
                         <p>O Camping foi pensado em todos os campistas, viajantes e aventureiros que buscam um camping completo: em estrutura, natureza, organização, atendimento, limpeza, experiências, etc... Somos o lugar ideal para quem busca silêncio, natureza pura e estrutura completa.<br>
+                        <br>
                         Aproveite para fazer sua reserva e aproveitar o final de semana ao lados das pessoas que você ama, espalhar simplicidade e uma vida mais leve e contemplativa, faz parte do que nos move.</p>
                     </div>
                 </header>
@@ -592,23 +591,7 @@
                     prevEl: ".swiper-button-prev",
                 },
                 });
-            } else if((scrennWidth>= 768) && (scrennWidth < 1024)){
-            let swiper = new Swiper(".mySwiper", {
-                slidesPerView: 2,
-                /* spaceBetween: 20, */
-                slidesPerGroup: 2,
-                loop: true,
-                loopFillGroupWithBlank: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                });
-            }else if(scrennWidth < 768){
+            } else if(scrennWidth < 1024){
             let swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 30,

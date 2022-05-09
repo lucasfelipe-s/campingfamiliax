@@ -37,7 +37,7 @@ body{
 }
 
 .wrapper{
-    width: min(77rem,100%);
+    width: min(58rem,100%);
     margin-inline:auto;
 }
 
@@ -93,7 +93,10 @@ section header span{
     height: var(--header-height);
     width: 100vw;
     z-index: 100;
+}
 
+#header .wrapper{
+    height: var(--header-height);
 }
 
 #header .icons__svg{
@@ -118,18 +121,18 @@ body.scroll #header .logo__svg svg path{
     fill:var(--bg-color2);
 }
 
-body.scroll #header .menu__svg svg path{
+body.scroll #header button svg path{
     stroke:var(--bg-color2);
 }
 
-.cabecalho .menu__svg button{
+.cabecalho button{
     border: none;
     background: none;
     cursor: pointer;
     padding: 0.2rem 0 0;
 }
 
-.cabecalho .menu__svg button img{
+.cabecalho button img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,33 +145,46 @@ body.menu__expanded{
     z-index: 101;
 }
 
-body.menu__expanded .wrapper{
-    background-color: var(--primary-color);
-    z-index: 101;
-}
-
 body.menu__expanded > :not(#header){
-    /* display: none; */
     visibility: hidden;
     opacity: 0;
 }
 
 .menu__header,
-.close__menu,
 body.menu__expanded .open__menu{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close__menu{
     display: none;
 }
 
-body.menu__expanded .menu__header,
+body.menu__expanded .menu__header{
+visibility: visible;
+opacity: 1;
+}
+
 body.menu__expanded .close__menu{
     display: block;
 }
 
+.menu__header{
+    transform: translateY(100%);
+}
+
 body.menu__expanded .menu__header{
+    position: fixed;
     top: 0;
     left: 0;
 
+    padding-top: var(--header-height);
+
+    width: 100vw;
     height: 100vh;
+
+    transition: transform 300ms;
+    transform: translateY(0);
 }
 
 .menu__header ul:nth-child(1){
@@ -224,7 +240,7 @@ body.menu__expanded .menu__header{
 }
 
 body.menu__expanded .logo__svg,
-body.menu__expanded .menu__svg{
+body.menu__expanded button{
     position: relative;
     z-index: 2;
 }
@@ -233,7 +249,7 @@ body.menu__expanded .logo__svg svg path{
     fill:var(--bg-color2);
 }
 
-body.menu__expanded .menu__svg svg path{
+body.menu__expanded button svg path{
     stroke:var(--bg-color2);
 }
 
@@ -343,7 +359,7 @@ body.menu__expanded .slide{
 }
 
 .slide{
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .manual__navigation{
@@ -460,12 +476,21 @@ body.menu__expanded .slide{
     flex-grow: 0;
     color: var(--primary-color);
     line-height: 2.4rem;
+    font-size: 1.6rem;
 }
 
 /* ================================ SEÇÃO SOBRE ================================ */
 #sobre{
     background-color: var(--bg-color);
     padding-bottom: 12.4rem;
+}
+
+#sobre header h2{
+    margin-left: 2.4rem;
+}
+
+#sobre header{
+    text-align: left;
 }
 
 #sobre .sobre__infos{
@@ -574,7 +599,7 @@ div.carousel__items:nth-child(11){
 
 /* ================================ BANNER ================================ */
 .banner{
-    width: min(77rem,100%);
+    width: min(58rem,100%);
     margin-inline:auto;
     margin-top: -8rem;
 }
@@ -841,11 +866,11 @@ footer .social__links img:hover{
     }
 
     .wrapper{
-        width: min(98rem,100%);
+        width: min(112rem,100%);
     }
 
     .videos__embed{
-        width: min(90rem,100%);
+        width: min(112rem,100%);
         padding-bottom: 55%;
         margin-inline: auto;
     }
@@ -857,6 +882,11 @@ footer .social__links img:hover{
 
     footer{
         padding-block: 8rem;  
+    }
+
+    #servicos header p:nth-child(2),
+    section header span{
+        font-size: 4rem;
     }
     
     /* RESET RESPONSIVO 1024px*/
@@ -873,6 +903,10 @@ footer .social__links img:hover{
         color: initial;
         background-color: initial;
         font-weight: initial;
+    }
+
+    .menu__header{
+        transform: none;
     }
   
     /* HEADER RESPONSIVO 1024px*/  
@@ -961,7 +995,7 @@ footer .social__links img:hover{
         background-color: var(--primary-color);
         
         position: relative;
-        bottom: -1.94rem;
+        bottom: -2rem;
         left: -0.8rem;
         
         display: block;
@@ -983,10 +1017,11 @@ footer .social__links img:hover{
         background-color: var(--bg-color2);
     }
     
+
     /* PRICIPAL__HERO RESPONSIVO 1024px*/
     .principal__hero .wrapper{
         display: grid;
-        grid-template-columns: 47.5rem 1fr;
+        grid-template-columns: 50.5rem 1fr;
         
         background-image: url(../images/montanhas.png);
         background-position: center;
@@ -1009,7 +1044,7 @@ footer .social__links img:hover{
     
     .principal__hero .hero__familia{
         margin-top: 2rem;
-        width: 52.4rem;
+        width: 47.4rem;
         height: 48.4rem;
     }
     
@@ -1018,6 +1053,8 @@ footer .social__links img:hover{
     }
     
     /* SERVIÇOS RESPONSIVO 1024px*/
+
+
     #servicos .wrapper .slider .slides input,
     #servicos .wrapper .slider .slides .navigation__auto,
     #servicos .wrapper .slider div.manual__navigation{
@@ -1077,7 +1114,7 @@ footer .social__links img:hover{
 
     .banner{
         margin-top: -10rem;
-        width: min(98rem,100%);
+        width: min(112rem,100%);
         margin-inline: auto;
     }
 
@@ -1171,261 +1208,3 @@ footer .social__links img:hover{
     }
 }
 
-/* ================================ RESPONSIVO 1440PX ================================ */
-@media (min-width:1440px){
-    .wrapper{
-        width: min(140rem,100%);
-    }
-
-    /* SEÇÃO HERO 1440px*/
-    .principal__hero .col-a{
-        width: min(60.5rem,100%);
-    }
-
-    .principal__hero .montanhas{
-        overflow-y: hidden;
-    }
-    .principal__hero .hero__familia{
-        margin-top: 1.3rem;
-        margin-right: 6.9rem;
-        width: 61.4rem;
-        height: 50rem;
-    }
-
-    /* SEÇÃO SOBRE 1440px*/
-    .carousel__items img{
-        width: 40rem;
-        height: 40rem;
-    }
-
-    /* BANNER 1440px*/
-    .banner{
-        margin-top: -12rem;
-    }
-
-    .banner__content{
-        padding: 8rem;
-    }
-
-    /* SEÇÃO DEPOIMENTOS 1440px*/
-    .depoimentos__cards .card{
-        width: min(69rem,100%);
-    }
-
-    /* BACKTOTOPBUTTON 1440px*/
-    #backToTopButton img{
-        width: 5.5rem;
-    }
-
-}
-
-/* ================================ RESPONSIVO 1800PX ================================ */
-@media (min-width:1920px){
-    .wrapper{
-        width: min(188rem,100%);
-    }
-
-    section header h2{
-        font-size: 2rem;
-    }
-
-    section header span{
-        font-size: 3.2rem;
-    }
-
-    .logo__svg svg,
-    footer .logo__svg img{
-        width: 13rem;
-        height: 13rem;
-    }
-
-    /* HEADER 1800px*/
-    #header{
-        height: 10rem;
-        display: flex;
-        align-items: center;
-    }
-
-
-    #header .menu__header ul li a{
-        font-size: 2.5rem;
-    }
-
-    header#header .menu__header ul li a::after{
-        bottom: -3.3rem;
-    }
-
-    header#header .menu__header a.button{
-        padding: 2rem 7rem;
-        font-size: 2.5rem;
-    }
-
-    /* SEÇÃO HERO 1800px*/
-
-    .principal__hero{
-        padding-top: 20rem;
-    }
-
-    .principal__hero .wrapper{
-        grid-template-columns: 81.5rem 1fr  
-    }
-
-    .principal__hero .hero__welcome{
-        font-size: 2rem;
-    }
-
-    .principal__hero h1{
-        font-size: 5.2rem;
-    }
-
-    .principal__hero p{
-        font-size: 2.5rem;
-    }
-
-    .principal__hero .button{
-        padding: 2rem 6rem;
-    }
-
-    .principal__hero .hero__familia{
-        margin-inline: auto;
-        width: 75rem;
-        height: 60rem;
-
-    }
-
-    .principal__hero .hero__familia img{
-        width: 75rem;
-        height: 60rem;
-    }
-
-    /* SEÇÃO SERVIÇOS 1800px*/
-
-    #servicos p:nth-child(2){
-        font-size: 3.2rem;
-    }
-
-    .servicos__infos .infos img{
-        width: 2.6rem;
-        height: 2.6rem;
-    }
-
-    .servicos__infos .infos h3{
-        font-size: 2.8rem;
-    }
-
-    .servicos__infos .infos p{
-        font-size: 2.3rem;
-        line-height: 2.8rem;
-
-    }
-
-    /* SEÇÃO SOBRE 1800px*/
-    .sobre__infos p{
-        font-size: 2.3rem;
-    }
-
-    .carousel__items img{
-        width: 50rem;
-        height: 50rem;
-    }
-
-    .sobre__videos div h3{
-        font-size: 2rem;
-    }
-
-    .videos__embed{
-        width: min(97rem,100%);
-    }
-
-    .swiper-pagination-bullet{
-        width: 1.5rem !important;
-        height: 1.5rem !important;
-    }
-
-    .swiper-button-next:after, .swiper-button-prev:after{
-        font-size: 6rem !important;
-    }
-
-    /* BANNER 1800px*/
-    .banner{
-        margin-top: -12rem;
-        width: min(179rem,100%);
-    }
-
-    .banner__content{
-        padding: 8rem;
-        border-radius: 1rem;
-    }
-
-    .banner__content .banner__btn{
-        padding: 3.5rem 16rem;
-    }
-
-    /* SEÇÃO DEPOIMENTOS 1800px*/
-    #depoimentos header{
-        margin-inline: 6.1rem;
-    }
-
-    #depoimentos header h2,
-    #contato header h2{
-        font-size: 2rem;
-    }
-
-    #depoimentos header span,
-    #contato header h2{
-        font-size: 3.2rem;
-    }
-
-    #depoimentos header p,
-    #contato header p,
-    #contato ul li,
-    #contato ul li a{
-        font-size: 2.3rem;
-    }
-
-    #depoimentos .depoimentos__cards .card{
-        width: min(80rem,100%);
-        height: 30.5rem;
-    }
-
-    .card cite{
-        font-size: 2.3rem;
-    }
-
-    .card .usuario img{
-        width: 7rem;
-    }
-
-    .card .usuario p{
-        font-size: 2.8rem;
-    }
-
-    /* SEÇÃO CONTATO 1800px*/
-    #contato .col-a{
-        width: min(56.4rem,100%);
-    }
-
-    #contato .button{
-        font-size: 2.3rem;
-        padding-block: 3rem;
-        gap: 5rem;
-    }
-
-    #contato .button img{
-        width: 3rem;
-    }
-
-    /* FOOTER 1800px*/
-    footer .social__links img{
-        width: 3rem;
-    }
-
-    footer span{
-        font-size: 1.8rem;
-    }
-
-    /* BACKTOTOPBUTTON 1800px*/
-    #backToTopButton img{
-        width: 7rem;
-    }
-}
