@@ -71,9 +71,13 @@
 
 ## 💻 Projeto
 
-Antes era apenas um projeto para teste mas agora é um projeto voluntario realizado durante o **Evento NLW Return** para a família X.<br>
-Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação do projeto).<br>
-O fato de ter diversas funcionalidades "inúteis" ou sem um "padrão", é justamente porque utilizei esse projeto para treinar e buscar antes de tudo evoluir minha lógica e capacidade de botar minhas ideias em prática.<br>
+Antes era apenas um projeto para teste mas agora é um projeto voluntario realizado durante o **Evento NLW Return** para a família X.
+<br>
+<br>
+Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação do projeto).
+<br>
+O fato de ter diversas funcionalidades "inúteis" ou feitas de uma forma complexa algo simples, é justamente porque utilizei esse projeto para treinar e buscar antes de tudo evoluir minha lógica e capacidade de botar minhas ideias em prática.
+<br>
 O protótipo desse website foi desenvolvido pelo [**Jonas Milan**](https://www.instagram.com/jonasmilancc/), [clique aqui](https://www.figma.com/community/file/1102912263666619803) para abrir o protótipo no figma.
 
 Ferramentas usadas nesse projeto:
@@ -81,12 +85,14 @@ Ferramentas usadas nesse projeto:
 - Figma
 - Photoshop
 ## 📥 Conhecimento adquirido:
-
-Durante a criação desse projeto aprendi muitos macetes de HTML e CSS, também consegui aplicar lógica básica em alguns algoritmos no JavaScript e também ouvi dicas excelentes sobre Mobile First, trajetoria de um programador e desafios que vou encontrar seguindo nessa carreira.
+É dificil mensurar o tanto de conhecimento adquirido depois de uma semana tão intensa, mas durante a criação desse projeto aprendi muitos macetes de HTML e CSS, também consegui aplicar lógica básica em alguns algoritmos no JavaScript e também ouvi dicas excelentes sobre Mobile First, trajetoria de um programador e desafios que vou encontrar seguindo nessa carreira.
 
 ## 📈 Desafios que tive:
 
-Meu maior desafio durante a criação desse projeto foi conseguir desenvolver minhas ideias e colocar elas em pratica de uma forma organizada com o conhecimento que eu tinha. Entretanto, consegui adquirir muito conhecimento nesse processo para aplicações futuras.
+É muito desafiador fazer um projeto com esse nível de detalhes sem um bom tempo de experiência, como sou iniciante foi bem intenso conseguir realizar o codigo escrevendo ele <b>100%</b> a mão e tentando copiar o mínimo possível das aulas.
+<br>
+
+Meu maior desafio durante a criação desse projeto foi conseguir desenvolver minhas ideias e colocar elas em pratica de uma forma organizada e autonoma com o conhecimento que eu tinha. Entretanto, consegui adquirir muito conhecimento nesse processo para aplicações futuras.
 
 ## 👨‍💻 Informações pessoais
 <h2 align="center">
