@@ -71,7 +71,7 @@
 
 ## 💻 Projeto
 
-Antes era apenas um projeto para teste mas agora é um projeto voluntario realizado durante o **Evento NLW Return** para a família X.
+Antes era apenas uma projeto para teste mas agora é um projeto voluntario realizado durante o **Evento NLW Return** como homenagem para a família X.
 <br>
 <br>
 Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação do projeto).
