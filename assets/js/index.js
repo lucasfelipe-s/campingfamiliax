@@ -10,6 +10,7 @@ function onScroll(){
     activeMenuAtCurrentSection(servicos);
     activeMenuAtCurrentSection(sobre);
     activeMenuAtCurrentSection(depoimentos);
+    activeMenuAtCurrentSection(clima);
     activeMenuAtCurrentSection(contato);
 }
 
