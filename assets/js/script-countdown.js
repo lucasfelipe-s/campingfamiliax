@@ -2,7 +2,7 @@
 
 import Countdown from "./countdown.js";
 
-const timeToWinter = new Countdown("21 June 2022 00:00:01 GMT-0300");
+const timeToWinter = new Countdown("21 June 2022 00:00:00 GMT-0300");
 const timesWinter = document.querySelectorAll("[data-time-winter]");
 
 function showTimeToWinter() {
@@ -24,7 +24,7 @@ function showTimeToAutumn() {
 showTimeToAutumn();
 setInterval(showTimeToAutumn, 1000);
 
-const timeToSummer = new Countdown("21 December 2022 00:00:01 GMT-0300");
+const timeToSummer = new Countdown("21 December 2022 00:00:00 GMT-0300");
 const timesSummer = document.querySelectorAll("[data-time-summer]");
 
 function showTimeToSummer() {
@@ -35,7 +35,7 @@ function showTimeToSummer() {
 showTimeToSummer();
 setInterval(showTimeToSummer, 1000);
 
-const timeToSpring = new Countdown("23 September 2022 00:00:01 GMT-0300");
+const timeToSpring = new Countdown("23 September 2022 00:00:00 GMT-0300");
 const timesSpring = document.querySelectorAll("[data-time-spring]");
 
 function showTimeToSpring() {

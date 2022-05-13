@@ -709,6 +709,50 @@ section#depoimentos{
     text-align: left;
 }
 
+.clima__seasons header,
+.seasons__content{
+    padding-bottom: 2.4rem;
+}
+
+.clima__seasons header h3{
+    color: var(--headline-);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.clima__seasons header p,
+.seasons__content section span{
+    color: var(--primary-color);
+    line-height: 125%;
+}
+
+.seasons__content h4{
+    font-size: 1.7rem;
+    color: var(--headline-);
+    margin-bottom: .5rem;
+}
+
+.seasons__content details{
+    padding-block: .5rem;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
+
+.seasons__content details summary{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    padding-bottom: .5rem;
+}
+
 .seasons__content section{
     padding-block: 0;
 }
@@ -719,13 +763,14 @@ section#depoimentos{
     margin: 1rem;
     border-radius: .5rem;
     background: var(--primary-color);
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
+    
 }
 
 .seasons__content .countdown li{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     padding: 1rem;
-/*     background: var(--bg-color); */
     color: var(--bg-color2);
     border-radius: .5rem;
     text-align: center;
@@ -733,6 +778,8 @@ section#depoimentos{
 
 .seasons__content .countdown span{
     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic !important;
+    color: var(--bg-color2);
     font-style: normal;
     font-size: 1.4rem;
 }
