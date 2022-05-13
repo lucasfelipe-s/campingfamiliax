@@ -10,6 +10,7 @@ function onScroll(){
     activeMenuAtCurrentSection(servicos);
     activeMenuAtCurrentSection(sobre);
     activeMenuAtCurrentSection(depoimentos);
+    activeMenuAtCurrentSection(clima);
     activeMenuAtCurrentSection(contato);
 }
 
@@ -142,6 +143,11 @@ ScrollReveal({
 .banner,
 #depoimentos header,
 .depoimentos__cards .card,
+#clima header,
+#clima .clima__content .col-a header,
+#clima .clima__content .col-a h4,
+#clima .clima__content .col-a details,
+#clima .clima__content .col-b,
 #contato header,
 #contato .contato__content ul,
 #contato .contato__content .button,

@@ -190,8 +190,8 @@ body.menu__expanded .menu__header{
 .menu__header ul:nth-child(1){
     display: flex;
     flex-direction: column;
-    gap: 4.8rem;
-    margin-top: 6rem;
+    gap: 2.5rem;
+    margin-top: 4rem;
     margin-bottom: 4.8rem;
 }
 
@@ -219,7 +219,7 @@ body.menu__expanded .menu__header{
     display: inline-block;
     background: var(--bg-color2);
     border-radius: 4rem; 
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .menu__header .button:hover,
@@ -692,10 +692,101 @@ section#depoimentos{
     margin-left: 1.6rem;
 }
 
+/* ================================ CLIMA ================================ */
+#clima{
+    background-color: var(--bg-color);
+}
+
+#clima .wrapper{
+    padding-inline: 2.4rem;
+}
+
+#clima header span{
+    margin-inline: 0;
+}
+
+#clima .clima__content{
+    text-align: left;
+}
+
+.clima__seasons header,
+.seasons__content{
+    padding-bottom: 2.4rem;
+}
+
+.clima__seasons header h3{
+    color: var(--headline-);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.clima__seasons header p,
+.seasons__content section span{
+    color: var(--primary-color);
+    line-height: 125%;
+}
+
+.seasons__content h4{
+    font-size: 1.7rem;
+    color: var(--headline-);
+    margin-bottom: .5rem;
+}
+
+.seasons__content details{
+    padding-block: .5rem;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
+
+.seasons__content details summary{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    padding-bottom: .5rem;
+}
+
+.seasons__content section{
+    padding-block: 0;
+}
+
+.seasons__content .countdown{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    border-radius: .5rem;
+    background: var(--primary-color);
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
+    
+}
+
+.seasons__content .countdown li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 1rem;
+    color: var(--bg-color2);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.seasons__content .countdown span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic !important;
+    color: var(--bg-color2);
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
 /* ================================ CONTATO ================================ */
 #contato{
     text-align: left;
-    background-color: var(--bg-color);
 }
 
 #contato .wrapper{
@@ -760,9 +851,9 @@ section#depoimentos{
     border-radius: .6rem;
 
     box-shadow:
-                1px 1px var(--bg-color),
-                2px 2px var(--bg-color),
-                3px 3px var(--bg-color);
+                1px 1px var(--primary-color-scroll),
+                2px 2px var(--primary-color-scroll),
+                3px 3px var(--primary-color-scroll);
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
@@ -1030,8 +1121,6 @@ footer .social__links img:hover{
     }
     
     /* SERVIÇOS RESPONSIVO 1024px*/
-
-
     #servicos .wrapper .slider .slides input,
     #servicos .wrapper .slider .slides .navigation__auto,
     #servicos .wrapper .slider div.manual__navigation{
@@ -1142,6 +1231,21 @@ footer .social__links img:hover{
     }
     .depoimentos__cards .col-c{
         grid-area: C;
+    }
+
+    /* CLIMA RESPONSIVO */
+
+    .clima__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-a{
+        text-align: left;
+    }
+
+    .col-b{
+        text-align: right;
     }
 
     /* CONTATO RESPONSIVO 1024px*/

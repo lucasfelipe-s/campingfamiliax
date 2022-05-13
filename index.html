@@ -224,6 +224,7 @@
                     <li><a onclick="menuClose()" href="#servicos" id="servicos__menu" >Serviços</a></li>
                     <li><a onclick="menuClose()" href="#sobre">Sobre</a></li>
                     <li><a onclick="menuClose()" href="#depoimentos">Depoimentos</a></li>
+                    <li><a onclick="menuClose()" href="#clima">Clima</a></li>
                 </ul>
                 <a onclick="menuClose()" class="button" href="#contato">Faça sua reserva</a>
                 <ul class="social__links">
@@ -490,6 +491,142 @@
 
         </section>
 
+        <section id="clima">
+            <div class="wrapper">
+                <header>
+                    <h2>Clima</h2>
+                    <span>Venha quando você se sentir melhor</span>
+                </header>
+
+                <div class="clima__content">
+                    <div class="col-a">
+                        <div class="clima__seasons">
+                            <header>
+                                <h3>Estações</h3>
+                                <p>Todo mundo já sabe que durante o ano ocorrem quatro estações: Primavera, verão, outono e inverno. Atualmente estamos no Outono.
+                                    <br>
+                                    Tendo isto em mente escolha a melhor hora para aproveitar o camping com quem você gosta.
+                                </p>
+                            </header>
+                            <div class="seasons__content">
+                                <h4>Verifique quanto tempo falta para a estação que você mais gosta:</h4>
+                                
+                                <details open>
+                                    <summary>Outono</summary>
+                                    <section>
+                                        <span>De 21 de março a 21 de junho, tempo para acabar:</span>
+                                        <ul class="countdown">
+                                            <li>
+                                                <span data-time-autumn></span>
+                                                <div>dia(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-autumn></span>
+                                                <div>hora(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-autumn></span>
+                                                <div>min</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-autumn></span>
+                                                <div>seg</div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </details>
+
+                                <details>
+                                    <summary>Inverno</summary>
+                                    <section>
+                                        <span>De 21 de junho a 23 de setembro, tempo até começar:</span>
+                                        <ul class="countdown">
+                                            <li>
+                                                <span data-time-winter></span>
+                                                <div>dia(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-winter></span>
+                                                <div>hora(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-winter></span>
+                                                <div>min</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-winter></span>
+                                                <div>seg</div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </details>
+
+                                <details>
+                                    <summary>Primavera</summary>
+                                    <section>
+                                        <span>De 23 de setembro a 21 de dezembro, tempo até começar:</span>
+                                        <ul class="countdown">
+                                            <li>
+                                                <span data-time-spring></span>
+                                                <div>dia(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-spring></span>
+                                                <div>hora(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-spring></span>
+                                                <div>min</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-spring></span>
+                                                <div>seg</div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </details>
+
+                                <details>
+                                    <summary>Verão</summary>
+                                    <section>
+                                        <span>De 21 de dezembro a 21 de março, tempo até começar:</span>
+                                        <ul class="countdown">
+                                            <li>
+                                                <span data-time-summer></span>
+                                                <div>dia(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-summer></span>
+                                                <div>hora(s)</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-summer></span>
+                                                <div>min</div>
+                                            </li>
+                                            <li>
+                                                <span data-time-summer></span>
+                                                <div>seg</div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </details>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-b">
+                        <div class="clima__weatherNow">
+                            <h3>Previsão do tempo</h3>
+                            <p>Verifique como está o clima agora aqui na montanha</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contato">
             <div class="wrapper">
                 <div class="col-a">
@@ -567,7 +704,8 @@
     </main>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./assets/index.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/script-countdown.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -591,7 +729,7 @@
                     prevEl: ".swiper-button-prev",
                 },
                 });
-            } else if(scrennWidth < 1024){
+            } else{
             let swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 30,
