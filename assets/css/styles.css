@@ -686,6 +686,7 @@ section#depoimentos{
 }
 
 /* ================================ SEÇÃO CLIMA ================================ */
+
 #clima{
     background-color: var(--bg-color);
 }
@@ -697,6 +698,7 @@ section#depoimentos{
 #clima header span{
     margin-inline: 0;
     padding-bottom: 2.4rem;
+
 }
 
 #clima .clima__content{
