@@ -18,8 +18,8 @@ html{
     scroll-behavior: smooth;
 }
 
-html,
-body{
+body,
+html{
     width: 100%;
     height: 100%;
 }
@@ -48,7 +48,7 @@ section header h2{
     font-size: 1.8rem;
     line-height: 150%;
     
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     text-transform: uppercase;
 
     color: var(--primary-color);
@@ -125,9 +125,9 @@ body.scroll #header button svg path{
 
 .cabecalho button{
     border: none;
-    background: none;
+    background: 0 0;
     cursor: pointer;
-    padding: 0.2rem 0 0;
+    padding: .2rem 0 0;
 }
 
 .cabecalho button img{
@@ -735,7 +735,7 @@ details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
 }
 
-@keyframes sweep {
+@keyframes sweep{
     0%    {opacity: 0; margin-left: -10px}
     100%  {opacity: 1; margin-left: 0px}
 }
@@ -744,8 +744,9 @@ details[open] summary ~ * {
     color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 700;
-
+    
     padding-bottom: .5rem;
+    cursor: pointer;
 }
 
 .seasons__content section{
@@ -790,34 +791,34 @@ details[open] summary ~ * {
 
 .clima__forecast{
     background: var(--primary-color);
-    border-radius: 7px;
+    border-radius: .7rem;
     box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
     margin: 1rem;
 }
 
 .clima__forecast header{
     display: flex;
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 500;
     color: var(--bg-color2);
-    padding: 16px 15px;
+    padding: 1.6rem 1.5rem;
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
 
 .clima__forecast header i{
-    font-size: 0em;
+    font-size: 0rem;
     cursor: pointer;
-    margin-right: 8px;
+    margin-right: .8rem;
 }
 
 .clima__forecast.active header i{
-    margin-left: 5px;
-    font-size: 30px;
+    margin-left: .5rem;
+    font-size: 3rem;
 }
 
 .clima__forecast .input-part{
-    padding: 20px 25px 30px;
+    padding: 2rem 2.5rem 3rem;
 }
 
 .clima__forecast.active .input-part{
@@ -826,11 +827,11 @@ details[open] summary ~ * {
 
 .input-part .info-txt{
     display: none;
-    font-size: 17px;
+    font-size: 1.7rem;
     text-align: center;
-    padding: 12px 10px;
-    border-radius: 7px;
-    margin-bottom: 15px;
+    padding: 1.2rem 1rem;
+    border-radius: .7rem;
+    margin-bottom: 1.5rem;
 }
 
 .input-part .info-txt.error{
@@ -849,25 +850,25 @@ details[open] summary ~ * {
 
 .input-part :where(input){
     width: 100%;
-    height: 55px;
+    height: 5.5rem;
     border: none;
     outline: none;
-    font-size: 18px;
-    border-radius: 7px;
+    font-size: 1.8rem;
+    border-radius: .7rem;
 }
 
 .input-part input{
     text-align: center;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     cursor:pointer;
-    background-color: var(--primary-hover);
-    color: var(--bg-color2);
-    font-weight: 400;
+    background-color: var(--bg-color2);
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .clima__forecast .weather-part{
     display: none;
-    padding: 30px 0 0;
+    padding: 3rem 0 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -881,13 +882,15 @@ details[open] summary ~ * {
 }
 
 .weather-part img{
-    max-width: 125px;
+    max-width: 12.5rem;
 }
 
 .weather-part .temp{
     display: flex;
     font-weight: 500;
-    font-size: 72px;
+    font-size: 7.2rem;
+
+    color: var(--primary-color);
 }
 
 .weather-part .temp .numb{
@@ -895,29 +898,29 @@ details[open] summary ~ * {
 }
 
 .weather-part .temp .deg{
-    font-size: 40px;
+    font-size: 4rem;
     display: block;
-    margin: 10px 5px 0 0;
+    margin: 1rem .5rem 0 0;
 }
 
 .weather-part .weather{
-    font-size: 21px;
+    font-size: 2.1rem;
     text-align: center;
-    margin: -5px 20px 15px;
+    margin: -.5rem 2rem 1.5rem;
 }
 
 .weather-part .location{
     display: flex;
-    font-size: 19px;
-    padding: 0 20px;
+    font-size: 1.9rem;
+    padding: 0 2rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     align-items: center;
 }
 
 .location i{
-    font-size: 22px;
-    margin: 4px 5px 0 0;
+    font-size: 2.2rem;
+    margin: .4rem .5rem 0 0;
 }
 
 .weather-part .bottom-details{
@@ -930,7 +933,7 @@ details[open] summary ~ * {
 .bottom-details .column{
     display: flex;
     width: 100%;
-    padding: 15px 0;
+    padding: 1.5rem 0;
     align-items: center;
     justify-content: center;
 }
@@ -945,23 +948,26 @@ details[open] summary ~ * {
 }
 
 .column .details{
-    margin-left: 3px;
+    margin-left: .3rem;
 }
 
-.details .temp, .humidity span{
-    font-size: 18px;
+.details .temp,
+.humidity span{
+    font-size: 1.8rem;
     font-weight: 500;
-    margin-top: -3px;
+    margin-top: -.3rem;
+
+    color: var(--primary-color);
 }
 
 .details .temp .deg{
     margin: 0;
-    font-size: 17px;
-    padding: 0 2px 0 1px;
+    font-size: 1.7rem;
+    padding: 0 .2rem 0 .1rem;
 }
 
 .column .details p{
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /* ================================ SEÇÃO CONTATO ================================ */
@@ -1064,7 +1070,12 @@ footer span a{
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
+}
 
+footer span a{
+    background: var(--primary-hover);
+    border-radius: .5rem;
+    padding-inline: .5rem;
 }
 
 footer span a:hover{
@@ -1123,8 +1134,8 @@ footer .social__links img:hover{
         margin-inline: auto;
     }
 
-    section,
-    #sobre{
+    #sobre,
+    section{
         padding-block: 16rem;
     }
 
@@ -1440,7 +1451,7 @@ footer .social__links img:hover{
     }
 
     .col-b{
-        text-align: right;
+        text-align: left;
     }
 
     .input-part input:hover{
