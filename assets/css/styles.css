@@ -2,8 +2,6 @@
     font-size: 62.5%;
     --header-height:7.2rem;
 
-    --swiper-theme-color: hsla(76, 86%, 26%, 0.62);
-
     --primary-color:#351808;
     --primary-color-scroll:#351808a9;
     --bg-color:hsla(76, 86%, 26%, 0.62);
@@ -537,11 +535,6 @@ body.menu__expanded .slide{
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
 }
 
-.carousel__items img:is(:hover,:focus){
-    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.2);
-    transform: translate3d(-8px, -8px, 13px);
-}
-
 .sobre__videos div h3{
     color: var(--headline-);
     font-size: 1.6rem;
@@ -617,7 +610,7 @@ body.menu__expanded .slide{
     border-radius: 4rem; 
 }
 
-/* ================================ DEPOIMENTOS ================================ */
+/* ================================ SEÇÃO DEPOIMENTOS ================================ */
 section#depoimentos{
     padding-top: 9rem;
 }
@@ -692,7 +685,7 @@ section#depoimentos{
     margin-left: 1.6rem;
 }
 
-/* ================================ CLIMA ================================ */
+/* ================================ SEÇÃO CLIMA ================================ */
 #clima{
     background-color: var(--bg-color);
 }
@@ -703,25 +696,27 @@ section#depoimentos{
 
 #clima header span{
     margin-inline: 0;
+    padding-bottom: 2.4rem;
 }
 
 #clima .clima__content{
     text-align: left;
 }
 
-.clima__seasons header,
-.seasons__content{
+.clima__seasons header{
     padding-bottom: 2.4rem;
 }
 
-.clima__seasons header h3{
+.clima__seasons header h3,
+.clima__weatherNow header h3{
     color: var(--headline-);
     font-size: 2rem;
     padding-bottom: 1rem;
 }
 
 .clima__seasons header p,
-.seasons__content section span{
+.seasons__content section span,
+.clima__weatherNow header p{
     color: var(--primary-color);
     line-height: 125%;
 }
@@ -763,8 +758,7 @@ details[open] summary ~ * {
     margin: 1rem;
     border-radius: .5rem;
     background: var(--primary-color);
-    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
-    
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);  
 }
 
 .seasons__content .countdown li{
@@ -784,7 +778,193 @@ details[open] summary ~ * {
     font-size: 1.4rem;
 }
 
-/* ================================ CONTATO ================================ */
+.clima__weatherNow header p{
+    padding-bottom: 2.4rem;
+}
+
+.clima__weatherNow h4{
+    font-size: 1.7rem;
+    color: var(--headline-);
+    margin-bottom: .5rem;
+}
+
+.clima__forecast{
+    background: var(--primary-color);
+    border-radius: 7px;
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
+    margin: 1rem;
+}
+
+.clima__forecast header{
+    display: flex;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--bg-color2);
+    padding: 16px 15px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.clima__forecast header i{
+    font-size: 0em;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.clima__forecast.active header i{
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.clima__forecast .input-part{
+    padding: 20px 25px 30px;
+}
+
+.clima__forecast.active .input-part{
+    display: none;
+}
+
+.input-part .info-txt{
+    display: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.input-part .info-txt.error{
+    color: #721c24;
+    display: block;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.input-part .info-txt.pending{
+    color: var(--bg-color2);
+    display: block;
+    background: var(--primary-hover);
+    border: 1px solid var(--bg-color2);
+}
+
+.input-part :where(input){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.input-part input{
+    text-align: center;
+    padding: 0 15px;
+    cursor:pointer;
+    background-color: var(--primary-hover);
+    color: var(--bg-color2);
+    font-weight: 400;
+}
+
+.clima__forecast .weather-part{
+    display: none;
+    padding: 30px 0 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clima__forecast.active .weather-part{
+    display: flex;
+    background-color: var(--bg-color2);
+    border-radius: 0 0 .5rem .5rem;
+    color: var(--headline-);
+}
+
+.weather-part img{
+    max-width: 125px;
+}
+
+.weather-part .temp{
+    display: flex;
+    font-weight: 500;
+    font-size: 72px;
+}
+
+.weather-part .temp .numb{
+    font-weight: 600;
+}
+
+.weather-part .temp .deg{
+    font-size: 40px;
+    display: block;
+    margin: 10px 5px 0 0;
+}
+
+.weather-part .weather{
+    font-size: 21px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+
+.weather-part .location{
+    display: flex;
+    font-size: 19px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.location i{
+    font-size: 22px;
+    margin: 4px 5px 0 0;
+}
+
+.weather-part .bottom-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+}
+
+.bottom-details .column{
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.column i{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.column.humidity{
+    border-left: 1px solid #ccc;
+}
+
+.column .details{
+    margin-left: 3px;
+}
+
+.details .temp, .humidity span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+
+.details .temp .deg{
+    margin: 0;
+    font-size: 17px;
+    padding: 0 2px 0 1px;
+}
+
+.column .details p{
+    font-size: 14px;
+}
+
+/* ================================ SEÇÃO CONTATO ================================ */
 #contato{
     text-align: left;
 }
@@ -1153,6 +1333,20 @@ footer .social__links img:hover{
 
     /* SOBRE RESPONSIVO 1024px*/
 
+    #sobre .wrapper{
+        overflow: hidden;
+    }
+
+    .swiper{
+        overflow: visible !important;
+    }
+
+    .carousel__items img:is(:hover,:focus){
+        box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.2);
+        transform: translate3d(-8px, -8px, 13px);
+    }
+    
+
     .sobre__videos{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1238,6 +1432,7 @@ footer .social__links img:hover{
     .clima__content{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 5rem;
     }
 
     .col-a{
@@ -1246,6 +1441,10 @@ footer .social__links img:hover{
 
     .col-b{
         text-align: right;
+    }
+
+    .input-part input:hover{
+        border: 1px solid var(--bg-color2);
     }
 
     /* CONTATO RESPONSIVO 1024px*/
@@ -1288,4 +1487,3 @@ footer .social__links img:hover{
         transform: scale(1.3);
     }
 }
-
