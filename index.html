@@ -26,10 +26,7 @@
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +38,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest"> 
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
       
 </head>
 
@@ -509,7 +507,7 @@
                                 </p>
                             </header>
                             <div class="seasons__content">
-                                <h4>Verifique quanto tempo falta para a estação que você mais gosta:</h4>
+                                <h4>Verifique quanto tempo falta para a estação que você mais gosta</h4>
                                 
                                 <details open>
                                     <summary>Outono</summary>
@@ -618,9 +616,55 @@
 
                     <div class="col-b">
                         <div class="clima__weatherNow">
-                            <h3>Previsão do tempo</h3>
-                            <p>Verifique como está o clima agora aqui na montanha</p>
-    
+                            <header>
+                                <h3>Previsão do tempo</h3>
+                                <p>Tem quem prefere vir acampar no frio e tem quem prefere vir em um clima mais ameno.
+                                    <br>
+                                    Tendo isto em mente confira a previsão do tempo na serra para se preparar da melhor forma possível.
+                                </p>
+                                <h4>Verifique como está o clima aqui na serra hoje</h4>
+                            </header>
+                            <div class="clima__forecast">
+                                <header><i class='bx bx-left-arrow-alt'></i>Previsão do tempo</header>
+                                <section class="input-part">
+                                  <p class="info-txt"></p>
+                                  <div class="content">
+                                    <input type="button" value="Verificar previsão">
+                                  </div>
+                                </section>
+                                <section class="weather-part">
+                                  <img src="" alt="Weather Icon">
+                                  <div class="temp">
+                                    <span class="numb">_</span>
+                                    <span class="deg">°</span>C
+                                  </div>
+                                  <div class="weather">_ _</div>
+                                  <div class="location">
+                                    <i class='bx bx-map'></i>
+                                    <span>_, _</span>
+                                  </div>
+                                  <div class="bottom-details">
+                                    <div class="column feels">
+                                      <i class='bx bxs-thermometer'></i>
+                                      <div class="details">
+                                        <div class="temp">
+                                          <span class="numb-2">_</span>
+                                          <span class="deg">°</span>C
+                                        </div>
+                                        <p>Sensação térmica</p>
+                                      </div>
+                                    </div>
+                                    <div class="column humidity">
+                                        <i class='bx bxs-droplet-half'></i>
+                                        <div class="details">
+                                            <span>_</span>
+                                            <p>Umidade</p>
+                                        </div>
+                                        
+                                    </div>
+                                  </div>
+                                </section>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -705,6 +749,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/weather.js"></script>
     <script type="module" src="./assets/js/script-countdown.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
