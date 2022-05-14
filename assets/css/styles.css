@@ -1069,8 +1069,6 @@ footer .logo__svg img{
 footer span,
 footer span a{
     color: var(--bg-color2);
-    font-weight: 400;
-    font-size: 1.6rem;
     line-height: 2;
 }
 
@@ -1082,6 +1080,76 @@ footer span a{
 
 footer span a:hover{
     text-decoration: underline;
+}
+
+.rating{
+    text-align: center;
+    display: table;
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label{
+    float: right;
+    font-size: 2rem;
+    color: lightgrey;
+    margin: 0 .5rem;
+    text-shadow: 1px 1px #bbb;
+}
+
+.rating label:before{
+    content: '★';
+    cursor: pointer;
+}
+
+.rating input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label{
+    color: gold;
+}
+
+.rating input:checked > label:hover,
+.rating input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+
+.rating .result:before{
+    content: "";
+    font-weight: 500;
+    color: gold;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+
+.rating input:checked ~ .result:before{
+    display: block;
+}
+
+.rating #five:checked ~ .result:before{
+    content: "Eu amei 😍";
+}
+
+.rating #four:checked ~ .result:before{
+    content: "Eu gostei 😎";
+}
+
+.rating #three:checked ~ .result:before{
+    content: "Até que é bom 😄";
+}
+
+.rating #two:checked ~ .result:before{
+    content: "Eu não gostei 😒";
+}
+
+.rating #one:checked ~ .result:before{
+    content: "Eu odiei 😠";
 }
 
 footer .social__links{
