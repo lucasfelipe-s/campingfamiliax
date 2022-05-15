@@ -23,50 +23,18 @@
   Link para acessar o projeto <a href="https://camping-familia-x.netlify.app" target="_blank">Camping Família X</a>
 </p></b>
 <h2 align="center">
-  Imagens do projeto desktop
+  Desktop
 </h2>
-  <p align="center">
-  <img src=".github/home.png" width="75%" />
   
-  <p align="center">
-  <img src=".github/servicos.png" width="75%" />
-  </p>
-  <p align="center">
-  <img src=".github/sobre.png" width="75%" />
-  </p>
-  <p align="center">
-  <img src=".github/sobre-banner.png" width="75%" />
-  </p>
-  <p align="center">
-  <img src=".github/depoimentos.png" width="75%" />
-  </p>
-  <p align="center">
-  <img src=".github/contato.png" width="75%" />
-  </p>
-  <p align="center">
-  <img src=".github/footer.png" width="75%" />
-  </p>
+  <div width="100%" overflow="hidden" align="center">
+  <img src=".github/DESKTOP.gif" width="75%" />
+  </div>
+  
 <h2 align="center">
-  Imagens do projeto mobile
+  Mobile
 </h2>
   <p align="center">
-  <img src=".github/home-mobile.jpeg" width="30%" />
-  <img src=".github/menu-mobile.jpeg" width="30%" />
-  
-  </p>
-
-  <p align="center">
-  <img src=".github/servicos-mobile.jpeg" width="30%" />
-  <img src=".github/sobre-mobile.jpeg" width="30%" />
-  </p>
-  
-  <p align="center">
-  <img src=".github/sobre-banner-mobile.jpeg" width="30%" />
-  <img src=".github/depoimentos-mobile.jpeg" width="30%" /
-  </p>
-  <p align="center">
-  <img src=".github/contato-mobile.jpeg" width="30%" />
-  <img src=".github/footer-mobile.jpeg" width="30%" />
+  <img src=".github/MOBILE.gif" width="30%" />
   </p>
 
 ## 💻 Projeto
@@ -74,7 +42,7 @@
 Antes era apenas uma projeto para teste mas agora é um projeto voluntario realizado durante o **Evento NLW Return** como homenagem para a família X.
 <br>
 <br>
-Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação do projeto).
+Foi uma semana de muito aprendizado e descoberta, o codigo pode ter ficado extenso e com alguns erros mas é comum para quem está em processo de aprendizagem, quando terminei o projeto não tinha nem 1 mês de estudo ativo de programação (como relatado nas imagens de como estava minhas contribuições na data de publicação do projeto).
 <br>
 O fato de ter diversas funcionalidades "inúteis" ou feitas de uma forma complexa algo simples, é justamente porque utilizei esse projeto para treinar e buscar antes de tudo evoluir minha lógica e capacidade de botar minhas ideias em prática.
 <br>
@@ -95,9 +63,9 @@ Ferramentas usadas nesse projeto:
 Meu maior desafio durante a criação desse projeto foi conseguir desenvolver minhas ideias e colocar elas em pratica de uma forma organizada e autonoma com o conhecimento que eu tinha. Entretanto, consegui adquirir muito conhecimento nesse processo para aplicações futuras.
 
 ## 👨‍💻 Informações pessoais
-<h2 align="center">
+<h3 align="center">
   Contribuições no dia do projeto.
-</h2>
+</h3>
 <p align="center">
   <img src=".github/contribuicoes.png" width="100%" />
 </p>
