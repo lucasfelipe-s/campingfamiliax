@@ -319,6 +319,14 @@ body.menu__expanded button svg path{
     background-repeat: no-repeat;
 }
 
+.naoOficial,
+.naoOficial2{
+    background-color: red;
+    color: white;
+    padding: 2rem;
+    font-weight: 700;
+}
+
 /* ================================ SEÇÃO SERVIÇOS ================================ */
 #servicos{
     background-color: var(--bg-color2);
@@ -1189,6 +1197,12 @@ footer .social__links img:hover{
 /* ================================ RESPONSIVO 1024px ================================ */
 @media (min-width:1024px) {
     /* GERAL RESPONSIVO 1024px*/
+
+    .naoOficial{
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+    }
 
     body{
         overflow: auto;
